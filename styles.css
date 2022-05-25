@@ -30,6 +30,10 @@ body {
   cursor: pointer;
 }
 
+#hamburger-menu {
+  cursor: pointer;
+}
+
 #headline-section {
   padding-top: 114px;
   padding-bottom: 136px;
