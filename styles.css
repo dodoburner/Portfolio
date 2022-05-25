@@ -22,9 +22,51 @@ header {
   font-weight: 700;
   margin: 0px 223px 0px 24px ;
   white-space: nowrap;
+  
 }
 
 #hamburger-menu {
   margin-right: 36px;
+}
+
+main {
+  margin: 114px 0px 0px 24px
+}
+
+#intro {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+
+  color: #172B4D;
+
+  width: 327px;
+  height: 150px;
+  margin-bottom: 12px;
+}
+
+#description {
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #344563;
+
+  width: 327px;
+  height: 146px;
+  margin-bottom: 12px;
+}
+
+#connect {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #7F8CFF;
+
+  margin-bottom: 12px;
+}
+
+.social-media-icon {
+  margin-right: 20px;
 }
 
