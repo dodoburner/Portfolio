@@ -27,6 +27,7 @@ body {
   font-weight: 700;
   margin-right: 223px;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 #headline-section {
