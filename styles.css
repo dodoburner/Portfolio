@@ -5,32 +5,32 @@ p,h1,h2,body {
 body {
   width: 375px;
   font-family: 'Poppins', sans-serif;
+  background: #F7F7F9;
 }
 
 .blue {
   color: #6070FF;
 }
 
-header {
+#header {
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  padding: 24px 36px 24px 24px;
+  background: white;
 }
 
 .logo {
   font-size: 18px;
   font-weight: 700;
-  margin: 0px 223px 0px 24px ;
+  margin: 0px 223px 0px 0px ;
   white-space: nowrap;
-  
 }
 
-#hamburger-menu {
-  margin-right: 36px;
-}
-
-main {
-  margin: 114px 0px 0px 24px
+#headline-section {
+  padding: 114px 0px 136px 24px;
+  background:
+   url(images/header-shapes\ mobile.png) no-repeat,white;
+  border-bottom-left-radius: 100px;
 }
 
 #intro {
@@ -64,6 +64,10 @@ main {
   color: #7F8CFF;
 
   margin-bottom: 12px;
+}
+
+#social-icons {
+  display: flex;
 }
 
 .social-media-icon {
