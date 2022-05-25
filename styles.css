@@ -1,0 +1,30 @@
+p,h1,h2,body {
+  margin: 0;
+}
+
+body {
+  width: 375px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.blue {
+  color: #6070FF;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0px 223px 0px 24px ;
+  white-space: nowrap;
+}
+
+#hamburger-menu {
+  margin-right: 36px;
+}
+
