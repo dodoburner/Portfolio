@@ -1,9 +1,6 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Project Name
 
 This is my Microverse personal portfolio project. Through this project I will demonstrate how to use Flexbox to position elements around the page and images and backgrounds to enhance the design.
-
 
 ## Built With
 
