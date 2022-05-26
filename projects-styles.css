@@ -1,3 +1,10 @@
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .project-section {
   padding: 16px 16px 28px 16px;
   border: 1px solid #dfe1e6;
