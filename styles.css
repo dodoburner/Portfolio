@@ -51,7 +51,7 @@ body {
   border-bottom-left-radius: 100px;
 }
 
-#intro {
+.intro {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
@@ -61,7 +61,7 @@ body {
   margin-bottom: 12px;
 }
 
-#description {
+.description {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
@@ -70,7 +70,7 @@ body {
   margin-bottom: 12px;
 }
 
-#connect {
+.connect {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -78,7 +78,7 @@ body {
   margin-bottom: 12px;
 }
 
-#social-icons {
+.social-icons {
   display: flex;
 }
 
