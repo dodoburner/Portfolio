@@ -17,7 +17,7 @@ li {
 #work-section {
   display: grid;
   row-gap: 88px;
-  padding: 114px 24px;
+  padding: 114px 24px calc(0px + 0px) 24px;
   margin-bottom: 114px;
   grid-template-columns: 1fr;
 }
@@ -110,4 +110,74 @@ li {
 .project-button:active:enabled {
   background: #2230d2;
   color: white;
+}
+
+#about-me-section {
+  background-color: white;
+  padding: 114px 24px;
+  border-top-right-radius: 80px;
+  margin-top: 114px;
+}
+
+#my-info {
+  padding: 24px 12px 12px 12px;
+}
+
+.resume-button {
+  width: 162px;
+  height: 48px;
+  margin-bottom: 24px;
+  margin-top: 22px;
+}
+
+.info-list-container,
+.resume-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.info-list-container {
+  margin-bottom: 36px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.info-list-container > p {
+  width: 237px;
+  margin-right: 30px;
+}
+
+.resume-list-item {
+  background: #f7f7f9;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+  margin-bottom: 12px;
+  padding: 9px 12px;
+}
+
+.resume-list-item > img {
+  margin-right: 16px;
+}
+
+.resume-frameworks {
+  margin-bottom: 24px;
+  margin-top: 36px;
+}
+
+.resume-frameworks,
+.resume-skills {
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.connect:nth-of-type(2) {
+  margin-bottom: 30px;
+}
+
+.intro-about-me {
+  width: 327px;
+  height: 101px;
 }

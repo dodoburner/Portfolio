@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="projects-styles.css">
+  <link rel="stylesheet" href="middle-section-styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -24,19 +24,19 @@
 
   <main>
     <section id="headline-section">
-      <h1 id="intro">
+      <h1 class="intro">
         I'm Dorian <br> Glad to see you!
       </h1>
   
-      <p id="description">
+      <p class="description">
         I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
       </p>
   
-      <p id="connect">
+      <p class="connect">
         LET'S CONNECT
       </p>
   
-      <ul id="social-icons"> 
+      <ul class="social-icons"> 
         <li><a class="social-media-icon" href=""><img src="images/social-icons/Vector.svg" alt="twitter link"></a></li>
         <li><a class="social-media-icon" href=""><img src="images/social-icons/Linkedinicon.svg" alt="linked-in link"></a></li>
         <li><a class="social-media-icon" href=""><img src="images/social-icons/Vector(2).svg" alt=""></a></li>
@@ -46,7 +46,7 @@
     </section>
 
     <section id="work-section">
-      <section class="project-section project1">
+      <div class="project-section project1">
         <img class="project-img" src="images/SnapshootPortfolio(2).jpg" alt="">
   
         <div class="project-info">
@@ -82,9 +82,9 @@
             See Project
           </button>
         </div>
-      </section>
+      </div>
 
-      <section class="project-section project2">
+      <div class="project-section project2">
         <img src="images/SnapshootPortfolio(1).jpg" alt="">
   
         <div class="project-info">
@@ -120,9 +120,9 @@
             See Project
           </button>
         </div>
-      </section>
+      </div>
 
-      <section class="project-section project3">
+      <div class="project-section project3">
         <img class="project-img" src="images/SnapshootPortfolio.jpg" alt="">
   
         <div class="project-info">
@@ -158,9 +158,9 @@
             See Project
           </button>
         </div>
-      </section>
+      </div>
 
-      <section class="project-section project4">
+      <div class="project-section project4">
         <img src="images/SnapshootPortfolio(3).jpg" alt="">
   
         <div class="project-info">
@@ -191,12 +191,71 @@
             <li class="language">css</li>
             <li class="language">javaScript</li>
           </ul>
-          
+
           <button type="button" class="project-button">
             See Project
           </button>
         </div>
-      </section>
+      </div>
+    </section>
+
+    <section id="about-me-section">
+      <h1 class="intro intro-about-me">
+        About <br> myself
+      </h1>
+  
+      <p class="description">
+        Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+      </p>
+  
+      <p class="connect">
+        LET'S CONNECT
+      </p>
+  
+      <ul class="social-icons"> 
+        <li><a class="social-media-icon" href=""><img src="images/social-icons/Vector.svg" alt="twitter link"></a></li>
+        <li><a class="social-media-icon" href=""><img src="images/social-icons/Linkedinicon.svg" alt="linked-in link"></a></li>
+        <li><a class="social-media-icon" href=""><img src="images/social-icons/Vector(2).svg" alt=""></a></li>
+        <li><a class="social-media-icon" href=""><img src="images/social-icons/Vector(1).svg" alt="github link"></a></li>
+        <li><a class="social-media-icon" href=""><img src="images/social-icons/Vector(3).svg" alt=""></a></li>
+      </ul>
+
+      <button type="button" class="project-button resume-button">
+        Get my resume
+      </button>
+
+      <ul id="my-info">
+        <li class="resume-list resume-languages">
+          <div class="info-list-container">
+            <p>
+              Languages
+             </p>
+             <img src="images/icon-down.png" alt="">
+          </div>
+          <ul>
+            <li class="resume-list-item"><img src="images/Ellipse1.png" alt="">JavaScript</li>
+            <li class="resume-list-item"><img src="images/Ellipse1(1).png" alt="">HTML</li>
+            <li class="resume-list-item"><img src="images/Ellipse1(2).png" alt="">CSS</li>
+          </ul>
+        </li>
+
+        <li class="resume-list resume-frameworks">
+          <div class="info-list-container">
+            <p>
+              Frameworks
+            </p>
+            <img src="images/icon-right.png" alt=""></div>
+        </li>
+
+        <li class="resume-list resume-skills">
+          <div class="info-list-container">
+            <p>
+              Skills
+            </p>
+            <img src="images/icon-right.png" alt="">
+          </div>
+        </li>
+      </ul>
     </section>
    
   </main>
