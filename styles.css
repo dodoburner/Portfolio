@@ -5,6 +5,10 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul,
 li {
   margin: 0;
@@ -13,7 +17,6 @@ li {
 }
 
 body {
-  width: 375px;
   font-family: 'Poppins', sans-serif;
   background: #f7f7f9;
 }
@@ -25,8 +28,8 @@ body {
 #header {
   display: flex;
   align-items: center;
-  padding: 24px 36px 24px 24px;
   background: white;
+  padding: 24px 36px 24px 24px;
 }
 
 .logo {
@@ -41,13 +44,22 @@ body {
   cursor: pointer;
 }
 
+nav > ul {
+  display: none;
+}
+
 #headline-section {
-  padding-top: 114px;
-  padding-bottom: 136px;
-  padding-left: 24px;
+  background-color: white;
+  border-bottom-left-radius: 100px;
+}
+
+#headline-container {
   background:
     url(images/header-shapes\ mobile.svg) no-repeat,
     white;
+  padding-top: 114px;
+  padding-bottom: 136px;
+  padding-left: 24px;
   border-bottom-left-radius: 100px;
 }
 
@@ -85,3 +97,4 @@ body {
 .social-media-icon {
   margin-right: 20px;
 }
+
