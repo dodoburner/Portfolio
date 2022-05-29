@@ -1,0 +1,156 @@
+@media only screen and (min-width: 768px) {
+  body {
+    display: initial;
+  }
+
+  #header {
+    padding: 25px 155px;
+    justify-content: space-between;
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
+
+  nav > ul > li > a {
+    color: #344563;
+  }
+
+  nav > ul {
+    display: flex;
+    justify-content: space-between;
+    width: 260px;
+  }
+
+  #headline-container {
+    background: url(images/desktop-images/Header\ bg.svg) no-repeat;
+    padding: 240px 225px 180px;
+    border-bottom-left-radius: 150px;
+  }
+
+  #headline-section {
+    padding-top: 40px;
+    padding-bottom: 75px;
+    border-bottom-left-radius: 150px;
+  }
+
+  .intro {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .intro > br:nth-child(2) {
+    display: none;
+  }
+
+  .description {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 24px;
+    width: auto;
+  }
+
+  #work-section {
+    row-gap: 142px;
+    padding: 142px;
+  }
+
+  .project-section {
+    display: flex;
+    padding: 24px;
+    width: auto;
+  }
+
+  .project-img {
+    display: none;
+  }
+
+  .project-img-desktop {
+    display: block;
+    max-height: 448px;
+    max-width: 544px;
+    margin-right: 46px;
+  }
+
+  .img2,
+   .img4 {
+    order:2;
+    margin-right: 0px;
+    margin-left: 46px;
+  }
+
+  .project-info {
+    margin-top: 16px
+  }
+
+  .project-title {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .project-info-top {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 32px;
+    margin-top: 20px;
+  }
+
+  .job-place {
+    font-weight: 500;
+  }
+
+  .project-text {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .project-languages {
+    margin-bottom: 40px;
+  }
+
+  #about-me-section {
+    padding: 142px 142px 134px ;
+    display: flex;
+    border-top-right-radius: 150px;
+  }
+
+  #my-knowledge {
+    flex: 1;
+  }
+
+  #my-info {
+    margin-right: 37px;
+    max-width: 447px;
+  }
+
+  .intro-about-me {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .description-about-me {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .resume-button {
+    margin-top: 36px;
+  }
+
+  .resume-list > ul {
+    display: flex;
+  }
+
+  .resume-list-item {
+    width: 122px;
+    height: 120px;
+    margin-right:12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+
+  
+

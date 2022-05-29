@@ -1,34 +1,26 @@
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .project-section {
-  padding: 16px 16px 28px 16px;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   background-color: white;
   box-sizing: border-box;
   width: 327px;
+  padding: 16px 16px 28px 16px;
 }
 
 #work-section {
   display: grid;
-  row-gap: 88px;
-  padding: 114px 24px calc(0px + 0px) 24px;
-  margin-bottom: 114px;
   grid-template-columns: 1fr;
+  row-gap: 88px;
+  padding: 114px 24px;
+}
+
+.project-img-desktop {
+  display: none;
 }
 
 .project-img {
   height: 225px;
   width: 295px;
-}
-
-.project-info {
-  margin-top: 12px;
 }
 
 .project-title {
@@ -37,8 +29,13 @@ li {
   line-height: 44px;
 }
 
+.project-info {
+  margin-top: 12px;
+}
+
 .project-info-top {
   display: flex;
+  align-items: center;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
@@ -55,11 +52,11 @@ li {
 }
 
 .project-text {
-  font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   color: #344563;
-  margin-bottom: 12px;
+  margin-bottom:12px;
+  font-size: 15px;
 }
 
 .project-languages {
@@ -115,12 +112,12 @@ li {
 #about-me-section {
   background-color: white;
   padding: 114px 24px;
-  border-top-right-radius: 80px;
-  margin-top: 114px;
+  border-top-right-radius: 100px;
 }
 
-#my-info {
-  padding: 24px 12px 12px 12px;
+#my-knowledge {
+  padding: 24px 12px;
+  box-sizing: border-box;
 }
 
 .resume-button {
@@ -130,22 +127,19 @@ li {
   margin-top: 22px;
 }
 
-.info-list-container,
+.knowledge-type-container,
 .resume-list-item {
   display: flex;
   align-items: center;
 }
 
-.info-list-container {
+.knowledge-type-container {
   margin-bottom: 36px;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-}
-
-.info-list-container > p {
-  width: 237px;
-  margin-right: 30px;
+  justify-content: space-between;
+  padding-right: 30px;
 }
 
 .resume-list-item {
@@ -157,6 +151,7 @@ li {
   color: #253858;
   margin-bottom: 12px;
   padding: 9px 12px;
+  box-sizing: border-box;
 }
 
 .resume-list-item > img {
@@ -173,11 +168,7 @@ li {
   border-bottom: 1px solid #dfe1e6;
 }
 
-.connect:nth-of-type(2) {
+#my-info > .connect {
   margin-bottom: 30px;
 }
 
-.intro-about-me {
-  width: 327px;
-  height: 101px;
-}
