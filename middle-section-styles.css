@@ -63,7 +63,6 @@ li {
 }
 
 .project-languages {
-  display: flex;
   margin-bottom: 24px;
 }
 
@@ -77,6 +76,8 @@ li {
   padding: 4px 12px;
   border-radius: 8px;
   letter-spacing: 0.03em;
+  float: left;
+  margin-bottom: 24px;
 }
 
 .project-button {
@@ -115,7 +116,7 @@ li {
 #about-me-section {
   background-color: white;
   padding: 114px 24px;
-  border-top-right-radius: 80px;
+  border-top-right-radius: 100px;
   margin-top: 114px;
 }
 
