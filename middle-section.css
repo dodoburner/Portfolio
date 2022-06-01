@@ -60,6 +60,7 @@
 }
 
 .project-languages {
+  display: flex;
   margin-bottom: 24px;
 }
 
@@ -73,8 +74,6 @@
   padding: 4px 12px;
   border-radius: 8px;
   letter-spacing: 0.03em;
-  float: left;
-  margin-bottom: 24px;
 }
 
 .project-button {
@@ -114,7 +113,6 @@
   background-color: white;
   padding: 114px 24px;
   border-top-right-radius: 100px;
-  margin-top: 114px;
 }
 
 #my-knowledge {
