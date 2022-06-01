@@ -12,10 +12,8 @@ form {
   background-color: #6070ff;
   padding: 103px 24px 45px 24px;
   border-top-left-radius: 100px;
-}
-
-form:last-child {
-  margin-right: auto;
+  width: 375px;
+  box-sizing: border-box;
 }
 
 form > h2 {
@@ -60,7 +58,7 @@ textarea::-webkit-input-placeholder {
   color: #b3bac5;
 }
 
-form > .form-button {
+.form-button {
   color: #6070ff;
   background-color: white;
   border-radius: 8px;

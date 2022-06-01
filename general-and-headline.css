@@ -5,6 +5,10 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul,
 li {
   margin: 0;
@@ -13,9 +17,12 @@ li {
 }
 
 body {
-  width: 375px;
   font-family: 'Poppins', sans-serif;
   background: #f7f7f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .blue {
@@ -25,8 +32,8 @@ body {
 #header {
   display: flex;
   align-items: center;
-  padding: 24px 36px 24px 24px;
   background: white;
+  padding: 24px 36px 24px 24px;
 }
 
 .logo {
@@ -41,13 +48,22 @@ body {
   cursor: pointer;
 }
 
+nav > ul {
+  display: none;
+}
+
 #headline-section {
-  padding-top: 114px;
-  padding-bottom: 136px;
-  padding-left: 24px;
+  background-color: white;
+  border-bottom-left-radius: 100px;
+}
+
+#headline-container {
   background:
     url(images/header-shapes\ mobile.svg) no-repeat,
     white;
+  padding-top: 114px;
+  padding-bottom: 136px;
+  padding-left: 24px;
   border-bottom-left-radius: 100px;
 }
 
@@ -56,8 +72,6 @@ body {
   font-weight: 700;
   line-height: 52px;
   color: #172b4d;
-  width: 327px;
-  height: 150px;
   margin-bottom: 12px;
 }
 
@@ -66,7 +80,6 @@ body {
   line-height: 24px;
   color: #344563;
   width: 327px;
-  height: 146px;
   margin-bottom: 12px;
 }
 
