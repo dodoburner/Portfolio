@@ -16,10 +16,6 @@ form {
   box-sizing: border-box;
 }
 
-form:last-child {
-  margin-right: auto;
-}
-
 form > h2 {
   font-size: 40px;
   font-weight: 700;
@@ -62,7 +58,7 @@ textarea::-webkit-input-placeholder {
   color: #b3bac5;
 }
 
-form > .form-button {
+.form-button {
   color: #6070ff;
   background-color: white;
   border-radius: 8px;
