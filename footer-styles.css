@@ -1,12 +1,24 @@
 footer {
-  background: url(images/contact\ form\ shapes-mobile.svg) no-repeat;
-  background-color: #6070ff;
-  background-position: top 20px right;
-  border-top-left-radius: 100px;
-  padding: 103px 24px 45px 24px;
+  background-color: white;
 }
 
-footer > h2 {
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url(images/contact-form-background.svg) no-repeat;
+  background-position: top 30px right;
+  background-color: #6070ff;
+  padding: 103px 24px 45px 24px;
+  border-top-left-radius: 100px;
+}
+
+form:last-child {
+  margin-right: auto;
+}
+
+form > h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
@@ -15,7 +27,7 @@ footer > h2 {
   margin-bottom: 12px;
 }
 
-footer > p {
+form > p {
   color: #ebebff;
   font-size: 20px;
   line-height: 28px;
@@ -30,6 +42,7 @@ input {
   border-radius: 8px;
   margin-bottom: 20px;
   box-sizing: border-box;
+  padding: 15px;
 }
 
 textarea {
@@ -62,22 +75,9 @@ form > .form-button {
   align-self: flex-start;
 }
 
-::-webkit-input-placeholder, 
+::-webkit-input-placeholder,
 input {
   font-size: 17px;
   color: #172b4d;
   line-height: 20px;
-  padding: 15px;
 }
-
-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-form:last-child {
-  margin-right:auto;
-}
-  
