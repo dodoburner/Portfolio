@@ -170,10 +170,6 @@
     max-width: 447px;
   }
 
-  .form-button {
-    align-self: center;
-  }
-
   form > p {
     max-width: 570px;
   }
@@ -187,7 +183,7 @@
     animation-duration: 3.5s;
     animation-name: slidein;
   }
-  
+
   @keyframes slidein {
     from {
       margin-left: 100%;
@@ -205,12 +201,12 @@
   }
 
   .form-button {
+    align-self: center;
     transition-property: transform;
     transition-duration: 0.7s;
   }
-  
+
   .form-button:hover {
     transform: scale(1.2);
   }
 }
-
