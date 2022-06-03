@@ -201,19 +201,16 @@
   }
 
   .project-button {
-    transition: background-color 0.5s ease-in 0.3s;
+    transition: background-color ease-in 0.5s;
   }
 
   .form-button {
-    background: blue;
-    transition-property: width;
-    transition-duration: 1.5s;
-    transition-timing-function: ease in;
-    transition-delay: 1s;
+    transition-property: transform;
+    transition-duration: 0.7s;
   }
   
   .form-button:hover {
-    width: 2px;
+    transform: scale(1.2);
   }
 }
 
