@@ -177,4 +177,27 @@
   form > p {
     max-width: 570px;
   }
+
+  #headline-container > .intro {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  #headline-container > .description {
+    animation-duration: 3.5s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 200%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 }
+
