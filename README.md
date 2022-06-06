@@ -9,7 +9,7 @@ This is my Microverse personal portfolio project. Through this project I will de
 
 ## Deployment
 
-To run this project in your local environment, you can use this link; https://dodoburner.github.io/Portfolio/
+To run this project in your local environment, you can use this [link](https://dodoburner.github.io/Portfolio/)
 
 ## Authors
 
