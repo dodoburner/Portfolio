@@ -209,4 +209,15 @@
   .form-button:hover {
     transform: scale(1.2);
   }
+
+  label {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+  }
+
+  input,
+  textarea {
+    margin-left: 20px;
+  }
 }
