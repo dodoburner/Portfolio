@@ -24,6 +24,7 @@
 
   #headline-container {
     background: url(images/desktop-images/Header\ bg.svg) no-repeat;
+    background-position: left 50% top 0%;
     padding: 240px 225px 180px;
     border-bottom-left-radius: 150px;
   }

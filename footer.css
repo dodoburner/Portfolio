@@ -43,6 +43,11 @@ input {
   padding: 15px;
 }
 
+label {
+  color: #ebebff;
+  padding-bottom: 8px;
+}
+
 textarea {
   height: 170px;
   width: 100%;
