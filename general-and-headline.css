@@ -25,6 +25,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
+  padding-top: 75px;
 }
 
 .display-none {
@@ -46,6 +47,11 @@ body {
   align-items: center;
   background: white;
   padding: 24px 36px 24px 24px;
+  height: 75px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  width: 375px;
 }
 
 .logo {
