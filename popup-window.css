@@ -1,0 +1,59 @@
+.popup {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: #C1C7D0;
+  padding: 50px 16px;
+  width: 375px;
+  box-sizing: border-box;
+}
+
+.popup-content > .project-info-top{
+  margin-top: 22px;
+  margin-bottom: 20px;
+}
+
+.popup-content {
+  background-color: white;
+  box-sizing: border-box;
+  padding: 20px 16px;
+  position: relative;
+  border-radius: 15px;
+}
+
+.icon-cancel {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.popup-project-img {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.popup-buttons {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 12px;
+  border-top: 1px solid #ebecf0;
+  padding-top: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.popup-buttons > .project-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.project-button > img {
+  margin-left: 14px;
+}
