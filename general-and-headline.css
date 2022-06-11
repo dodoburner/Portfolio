@@ -7,6 +7,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul,
@@ -24,6 +25,10 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
+}
+
+.display-none {
+  display: none;
 }
 
 .not-scrollable {
