@@ -16,12 +16,12 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <section id="mobile-menu">
-    <img src="images/Icon-Cancel.svg" alt="button for closing the mobile menu">
+  <section id="mobile-menu" class="display-none">
+    <img id="menu-close" src="images/Icon-Cancel.svg" alt="button for closing the mobile menu">
     <ul>
-      <li>Portfolio</li>
-      <li>About</li>
-      <li>Contact</li>
+      <li class="menu-links"><a href="#work-section">Portfolio</a></li>
+      <li class="menu-links"><a href="#about-me-section">About</a</li>
+      <li class="menu-links"><a href="#contact-section">Contact</a></li>
     </ul>
   </section>
 
@@ -33,9 +33,9 @@
     <nav id="navigation-menu">
       <img id="hamburger-menu" src="images/Union.png" alt="navigation menu">
       <ul>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#work-section">Portfolio</a></li>
+        <li><a href="#about-me-section">About</a></li>
+        <li><a href="#contact-section">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -284,7 +284,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer id="contact-section">
     <form action="https://formspree.io/f/xvolldvz" method="post">
       <h2>
         Contact me
