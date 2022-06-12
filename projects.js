@@ -1,6 +1,6 @@
 const projects = [
   {
-    mobileImage: 'src="images/SnapshootPortfolio(2).jpg" alt="project tonic homepage"',
+    mobileImage: 'src="images/SnapshootPortfolio(0).jpg" alt="project tonic homepage"',
     desktopImage: 'src="images/desktop-images/img1.png" alt="project tonic homepage"',
     name: 'Tonic',
     jobDescription: {
@@ -14,7 +14,7 @@ const projects = [
   {
     mobileImage: 'src="images/SnapshootPortfolio(1).jpg" alt="project multi-post-stories homepage"',
     desktopImage: 'src="images/desktop-images/img2.png" alt="project multi-post-stories homepage"',
-    name: 'Multi-Post Stories',
+    name: 'Multi-Post <br>Stories',
     jobDescription: {
       company: 'FACEBOOK',
       role: 'FullStack Dev',
@@ -24,7 +24,7 @@ const projects = [
     languages: ['html', 'css', 'javascript']
   },
   {
-    mobileImage: 'src="images/SnapshootPortfolio.jpg" alt="project tonic homepage"',
+    mobileImage: 'src="images/SnapshootPortfolio(2).jpg" alt="project tonic homepage"',
     desktopImage: 'src="images/desktop-images/img3.png" alt="project tonic homepage"',
     name: 'Facebook 360',
     jobDescription: {
@@ -38,7 +38,7 @@ const projects = [
   {
     mobileImage: 'src="images/SnapshootPortfolio(3).jpg" alt="project multi-post-stories homepage"',
     desktopImage: 'src="images/desktop-images/img4.png" alt="project multi-post-stories homepage"',
-    name: 'Multi-Post Stories',
+    name: 'Multi-Post <br>Stories',
     jobDescription: {
       company: 'Uber',
       role: 'Lead Developer',
@@ -110,6 +110,7 @@ function createPopup(position) {
         </h3>
 
         <img class="icon-cancel" src="images/popup-images/Icon-Cancel-Gray.svg" alt="">
+        <img class="popup-project-img" src="images/SnapshootPortfolio(${position}).jpg" alt="">
 
         <ul class="project-info-top">
           <li class="job-place">${projects[position].jobDescription.company}</li>

@@ -28,7 +28,7 @@
   height: 24px;
   width: 24px;
   position: absolute;
-  right: 30px;
+  right: 15px;
   top: 30px;
 }
 
@@ -103,5 +103,9 @@
 
   .badges-buttons > .project-languages {
     margin-bottom: 20px;
+  }
+
+  .icon-cancel {
+    right: 30px;
   }
 }
