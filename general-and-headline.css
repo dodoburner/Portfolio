@@ -42,7 +42,7 @@ body {
   color: #6070ff;
 }
 
-#header {
+header {
   display: flex;
   align-items: center;
   background: white;
