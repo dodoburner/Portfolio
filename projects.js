@@ -7,34 +7,41 @@ const projects = [
       year: '2015'
     },
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages : ['html', 'css', 'javascript']
+    languages: ['html', 'css', 'javascript']
   },
-
   {
-    name: 'Multipurpose Stories',
+    name: 'Multi-Post Stories',
     jobDescription: {
-      company: 'CANOPY',
-      role: 'Back End Dev',
+      company: 'FACEBOOK',
+      role: 'FullStack Dev',
       year: '2015'
     },
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages : ['html', 'css', 'javascript']
+    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    languages: ['html', 'css', 'javascript']
   },
-
   {
-    name: 'Tonic 3',
+    name: 'Facebook 360',
     jobDescription: {
-      company: 'CANOPY',
-      role: 'Back End Dev',
+      company: 'FACEBOOK',
+      role: 'FullStack Dev',
       year: '2015'
     },
-    description: 'sbacjlsbncalksnc;laksmnc;alsmc;asmc;ams;cams;cma;slcma;smcldsknvlsndvlskdnv;sdv',
-    languages : ['html', 'css', 'javascript']
+    description: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+    languages: ['html', 'css', 'javascript']
+  },
+  {
+    name: 'Multi-Post Stories',
+    jobDescription: {
+      company: 'Uber',
+      role: 'Lead Developer',
+      year: '2018'
+    },
+    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    languages: ['html', 'css', 'javascript']
   }
 ]
 
 const workSection = document.querySelector('#work-section')
-const popup = document.querySelector('.popup');
 
 projects.forEach((project) => {
   let projectHTML = document.createElement('div');
@@ -81,20 +88,28 @@ projects.forEach((project) => {
 
   `);
 
-  popupHTML.innerHTML = (`
+  
+  
+  workSection.appendChild(projectHTML);
+  
+})
+
+function createPopup(position) {
+  const popup= document.createElement('section')
+    popup.innerHTML = (`
     <div class="popup-content">
         <h3 class="project-title">
-           ${project.name}
+           ${projects[position].name}
         </h3>
 
         <img class="icon-cancel" src="images/popup-images/Icon-Cancel-Gray.svg" alt="">
 
         <ul class="project-info-top">
-          <li class="job-place">${project.jobDescription.company}</li>
+          <li class="job-place">${projects[position].jobDescription.company}</li>
           <img class="circle" src="images/Counter.svg" alt="">
-          <li class="job-title gray">${project.jobDescription.role}</li>
+          <li class="job-title gray">${projects[position].jobDescription.role}</li>
           <img class="circle" src="images/Counter.svg" alt="">
-          <li class="project-year gray">${project.jobDescription.year}</li>
+          <li class="project-year gray">${projects[position].jobDescription.year}</li>
         </ul>
 
         <img class="project-img-desktop" src="images/desktop-images/img1.png" alt="project tonic homepage">
@@ -127,25 +142,20 @@ projects.forEach((project) => {
       </div>
   
   `);
-  
-  workSection.appendChild(projectHTML);
-  popup.appendChild(popupHTML);
-})
+  popup.classList.add('popup')
+  document.body.appendChild(popup)
+}
 
 const iconCancel = document.querySelector('.icon-cancel');
 const projectButton = document.querySelectorAll('.project-info .project-button');
 
-function togglePopup(element) {
-  element.addEventListener('click', (e) => {
-    popup.classList.toggle('display-none');
-    
-  });
-}
-
-togglePopup(iconCancel);
 
 projectButton.forEach((btn, index) => {
-  const popups = document.querySelectorAll('.popup')
-  if()
-  togglePopup(btn);
-})
+  btn.addEventListener('click', () => {
+    createPopup(index)
+    let popup= document.querySelector('.popup')
+    let closeButton =  document.querySelector('.icon-cancel').addEventListener('click', () => {
+      document.body.removeChild(popup)
+    })
+  })
+}); 
