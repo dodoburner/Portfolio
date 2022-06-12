@@ -14,7 +14,7 @@ const projects = [
   {
     mobileImage: 'src="images/SnapshootPortfolio(1).jpg" alt="project multi-post-stories homepage"',
     desktopImage: 'src="images/desktop-images/img2.png" alt="project multi-post-stories homepage"',
-    name: 'Multi-Post <br>Stories',
+    name: 'Multi-Post Stories',
     jobDescription: {
       company: 'FACEBOOK',
       role: 'FullStack Dev',
@@ -38,7 +38,7 @@ const projects = [
   {
     mobileImage: 'src="images/SnapshootPortfolio(3).jpg" alt="project multi-post-stories homepage"',
     desktopImage: 'src="images/desktop-images/img4.png" alt="project multi-post-stories homepage"',
-    name: 'Multi-Post <br>Stories',
+    name: 'Multi-Post Stories',
     jobDescription: {
       company: 'Uber',
       role: 'Lead Developer',
