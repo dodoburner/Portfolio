@@ -1,5 +1,7 @@
 const projects = [
   {
+    mobileImage: 'src="images/SnapshootPortfolio(2).jpg" alt="project tonic homepage"',
+    desktopImage: 'src="images/desktop-images/img1.png" alt="project tonic homepage"',
     name: 'Tonic',
     jobDescription: {
       company: 'CANOPY',
@@ -10,6 +12,8 @@ const projects = [
     languages: ['html', 'css', 'javascript']
   },
   {
+    mobileImage: 'src="images/SnapshootPortfolio(1).jpg" alt="project multi-post-stories homepage"',
+    desktopImage: 'src="images/desktop-images/img2.png" alt="project multi-post-stories homepage"',
     name: 'Multi-Post Stories',
     jobDescription: {
       company: 'FACEBOOK',
@@ -20,6 +24,8 @@ const projects = [
     languages: ['html', 'css', 'javascript']
   },
   {
+    mobileImage: 'src="images/SnapshootPortfolio.jpg" alt="project tonic homepage"',
+    desktopImage: 'src="images/desktop-images/img3.png" alt="project tonic homepage"',
     name: 'Facebook 360',
     jobDescription: {
       company: 'FACEBOOK',
@@ -30,6 +36,8 @@ const projects = [
     languages: ['html', 'css', 'javascript']
   },
   {
+    mobileImage: 'src="images/SnapshootPortfolio(3).jpg" alt="project multi-post-stories homepage"',
+    desktopImage: 'src="images/desktop-images/img4.png" alt="project multi-post-stories homepage"',
     name: 'Multi-Post Stories',
     jobDescription: {
       company: 'Uber',
@@ -41,15 +49,18 @@ const projects = [
   }
 ]
 
-const workSection = document.querySelector('#work-section')
+const workSection = document.createElement('section')
+workSection.id= 'work-section'
+const mainSection= document.querySelector('main')
+mainSection.insertBefore(workSection, mainSection.children[1])
 
-projects.forEach((project) => {
+projects.forEach((project, index) => {
   let projectHTML = document.createElement('div');
   let popupHTML = document.createElement('div');
   projectHTML.innerHTML =(`
   <div class="project-section project1">
-    <img class="project-img" src="images/SnapshootPortfolio(2).jpg" alt="project tonic homepage">
-    <img class="project-img-desktop img1" src="images/desktop-images/img1.png" alt="project tonic homepage">
+    <img class="project-img" ${project.mobileImage}>
+    <img class="project-img-desktop img${index+1}" ${project.desktopImage}>
     
     <div class="project-info">
       <h3 class="project-title">
@@ -87,11 +98,7 @@ projects.forEach((project) => {
   </div>
 
   `);
-
-  
-  
   workSection.appendChild(projectHTML);
-  
 })
 
 function createPopup(position) {
@@ -112,19 +119,18 @@ function createPopup(position) {
           <li class="project-year gray">${projects[position].jobDescription.year}</li>
         </ul>
 
-        <img class="project-img-desktop" src="images/desktop-images/img1.png" alt="project tonic homepage">
-        <img class="popup-project-img" src="images/SnapshootPortfolio(1).jpg" alt="">
+        <img class="project-img-desktop" src="images/desktop-images/img${position+1}.png" alt="project tonic homepage">
 
         <div class="popup-bottom">
           <p class="project-text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
+            ${projects[position].description}
           </p>
 
           <div class="badges-buttons">
             <ul class="project-languages">
-              <li class="language">html</li>
-              <li class="language">css</li>
-              <li class="language">javaScript</li>
+              <li class="language">${projects[position].languages[0]}</li>
+              <li class="language">${projects[position].languages[1]}</li>
+              <li class="language">${projects[position].languages[2]}</li>
             </ul>
   
             <div class="popup-buttons">
@@ -140,22 +146,20 @@ function createPopup(position) {
           </div>
         </div>
       </div>
-  
   `);
-  popup.classList.add('popup')
-  document.body.appendChild(popup)
+  popup.classList.add('popup');
+  document.body.appendChild(popup);
 }
 
 const iconCancel = document.querySelector('.icon-cancel');
 const projectButton = document.querySelectorAll('.project-info .project-button');
 
-
 projectButton.forEach((btn, index) => {
   btn.addEventListener('click', () => {
-    createPopup(index)
-    let popup= document.querySelector('.popup')
+    createPopup(index);
+    let popup= document.querySelector('.popup');
     let closeButton =  document.querySelector('.icon-cancel').addEventListener('click', () => {
-      document.body.removeChild(popup)
+      document.body.removeChild(popup);
     })
   })
 }); 
