@@ -6,10 +6,10 @@ const projects = [
     jobDescription: {
       company: 'CANOPY',
       role: 'Back End Dev',
-      year: '2015'
+      year: '2015',
     },
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'css', 'javascript']
+    languages: ['html', 'css', 'javascript'],
   },
   {
     mobileImage: 'src="images/SnapshootPortfolio(1).jpg" alt="project multi-post-stories homepage"',
@@ -18,10 +18,10 @@ const projects = [
     jobDescription: {
       company: 'FACEBOOK',
       role: 'FullStack Dev',
-      year: '2015'
+      year: '2015',
     },
     description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    languages: ['html', 'css', 'javascript']
+    languages: ['html', 'css', 'javascript'],
   },
   {
     mobileImage: 'src="images/SnapshootPortfolio(2).jpg" alt="project tonic homepage"',
@@ -30,10 +30,10 @@ const projects = [
     jobDescription: {
       company: 'FACEBOOK',
       role: 'FullStack Dev',
-      year: '2015'
+      year: '2015',
     },
     description: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-    languages: ['html', 'css', 'javascript']
+    languages: ['html', 'css', 'javascript'],
   },
   {
     mobileImage: 'src="images/SnapshootPortfolio(3).jpg" alt="project multi-post-stories homepage"',
@@ -42,24 +42,24 @@ const projects = [
     jobDescription: {
       company: 'Uber',
       role: 'Lead Developer',
-      year: '2018'
+      year: '2018',
     },
     description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    languages: ['html', 'css', 'javascript']
-  }
-]
+    languages: ['html', 'css', 'javascript'],
+  },
+];
 
-const workSection = document.createElement('section')
-workSection.id= 'work-section'
-const mainSection= document.querySelector('main')
-mainSection.insertBefore(workSection, mainSection.children[1])
+const workSection = document.createElement('section');
+workSection.id = 'work-section';
+const mainSection = document.querySelector('main');
+mainSection.insertBefore(workSection, mainSection.children[1]);
 
 projects.forEach((project, index) => {
-  let projectHTML = document.createElement('div');
-  projectHTML.innerHTML =(`
+  const projectHTML = document.createElement('div');
+  projectHTML.innerHTML = (`
   <div class="project-section project1">
     <img class="project-img" ${project.mobileImage}>
-    <img class="project-img-desktop img${index+1}" ${project.desktopImage}>
+    <img class="project-img-desktop img${index + 1}" ${project.desktopImage}>
     
     <div class="project-info">
       <h3 class="project-title">
@@ -98,11 +98,11 @@ projects.forEach((project, index) => {
 
   `);
   workSection.appendChild(projectHTML);
-})
+});
 
 function createPopup(position) {
-  const popup= document.createElement('div')
-    popup.innerHTML = (`
+  const popup = document.createElement('div');
+  popup.innerHTML = (`
     <div class="popup-content">
         <h3 class="project-title">
            ${projects[position].name}
@@ -119,7 +119,7 @@ function createPopup(position) {
           <li class="project-year gray">${projects[position].jobDescription.year}</li>
         </ul>
 
-        <img class="project-img-desktop" src="images/desktop-images/img${position+1}.png" alt="project tonic homepage">
+        <img class="project-img-desktop" src="images/desktop-images/img${position + 1}.png" alt="project tonic homepage">
 
         <div class="popup-bottom">
           <p class="project-text">
@@ -151,15 +151,14 @@ function createPopup(position) {
   document.body.appendChild(popup);
 }
 
-const iconCancel = document.querySelector('.icon-cancel');
 const projectButton = document.querySelectorAll('.project-info .project-button');
 
 projectButton.forEach((btn, index) => {
   btn.addEventListener('click', () => {
     createPopup(index);
-    let popup= document.querySelector('.popup');
-    let closeButton =  document.querySelector('.icon-cancel').addEventListener('click', () => {
+    const popup = document.querySelector('.popup');
+    document.querySelector('.icon-cancel').addEventListener('click', () => {
       document.body.removeChild(popup);
-    })
-  })
-}); 
+    });
+  });
+});
