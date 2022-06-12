@@ -56,7 +56,6 @@ mainSection.insertBefore(workSection, mainSection.children[1])
 
 projects.forEach((project, index) => {
   let projectHTML = document.createElement('div');
-  let popupHTML = document.createElement('div');
   projectHTML.innerHTML =(`
   <div class="project-section project1">
     <img class="project-img" ${project.mobileImage}>
@@ -102,7 +101,7 @@ projects.forEach((project, index) => {
 })
 
 function createPopup(position) {
-  const popup= document.createElement('section')
+  const popup= document.createElement('div')
     popup.innerHTML = (`
     <div class="popup-content">
         <h3 class="project-title">
