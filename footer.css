@@ -75,7 +75,6 @@ textarea::-webkit-input-placeholder {
   height: 48px;
   font-family: inherit;
   margin-top: 22px;
-  align-self: flex-start;
 }
 
 ::-webkit-input-placeholder,
@@ -92,10 +91,11 @@ input {
 
 .error-message {
   margin-left: 16px;
-  padding: 2px;
-  border-radius: 5px;
-  background-color: orange;
-  font-size: 15px;
-  line-height: 24px;
-  color: red;
+  margin-top: 16px;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: rgba(255, 0, 0, 0.9);
+  color: white;
+  height: fit-content;
 }
