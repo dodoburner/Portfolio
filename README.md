@@ -4,7 +4,7 @@ This is my Microverse personal portfolio project. Through this project I will de
 
 ## Built With
 
-- Major languages: HTML, CSS
+- Major languages: HTML, CSS, JavaScript
 - Technologies used: GitHub Actions
 
 ## Deployment
@@ -15,9 +15,15 @@ To run this project in your local environment, you can use this [link](https://d
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/dodoburner)
-- Twitter: [@twitterhandle](https://twitter.com/DorianUrem)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/dorian-urem-252baa237/)
+- GitHub: [@dodoburner](https://github.com/dodoburner)
+- Twitter: [@DorianUrem](https://twitter.com/DorianUrem)
+- LinkedIn: [Dorian Urem](https://www.linkedin.com/in/dorian-urem-252baa237/)
+
+👤 **Author2**
+
+- GitHub: [XsidX](https://github.com/XsidX)
+- Twitter: [@\_sid_o](https://twitter.com/_sid_o_)
+- LinkedIn: [Sidney Kaguli](https://www.linkedin.com/in/sidney-kaguli-0116801a6/)
 
 ## 🤝 Contributing
 

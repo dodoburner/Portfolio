@@ -148,7 +148,8 @@ function createPopup(position) {
       </div>
   `);
   popup.classList.add('popup');
-  document.body.appendChild(popup);
+  workSection.appendChild(popup);
+  document.body.classList.toggle('not-scrollable');
 }
 
 const projectButton = document.querySelectorAll('.project-info .project-button');
@@ -158,7 +159,8 @@ projectButton.forEach((btn, index) => {
     createPopup(index);
     const popup = document.querySelector('.popup');
     document.querySelector('.icon-cancel').addEventListener('click', () => {
-      document.body.removeChild(popup);
+      workSection.removeChild(popup);
+      document.body.classList.toggle('not-scrollable');
     });
   });
 });
