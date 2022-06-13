@@ -1,0 +1,36 @@
+#mobile-menu {
+  background: rgba(45, 64, 236, 0.8);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 375px;
+}
+
+#mobile-menu > img {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
+
+#mobile-menu > ul {
+  margin-top: 100px;
+  margin-left: 30px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  color: white;
+}
+
+#mobile-menu li {
+  margin-bottom: 30px;
+  max-width: fit-content;
+}
+
+@media only screen and (min-width: 768px) {
+  #mobile-menu {
+    display: none;
+  }
+}
