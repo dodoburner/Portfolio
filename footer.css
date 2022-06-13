@@ -84,3 +84,8 @@ input {
   color: #172b4d;
   line-height: 20px;
 }
+
+#button-wrapper {
+  display: flex;
+  align-self: flex-start;
+}
