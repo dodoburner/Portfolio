@@ -1,0 +1,111 @@
+.popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  max-height: 100vh;
+  overflow: auto;
+  width: 375px;
+  background: rgba(193, 199, 208, 0.8);
+  backdrop-filter: blur(3px);
+  padding: 50px 16px;
+  box-sizing: border-box;
+}
+
+.popup-content > .project-info-top {
+  margin-top: 22px;
+  margin-bottom: 20px;
+}
+
+.popup-content {
+  background-color: white;
+  box-sizing: border-box;
+  padding: 20px 16px;
+  position: relative;
+  border-radius: 15px;
+}
+
+.icon-cancel {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 15px;
+  top: 30px;
+}
+
+.popup-project-img {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.popup-buttons {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 12px;
+  border-top: 1px solid #ebecf0;
+  padding-top: 25px;
+}
+
+.popup-buttons > .project-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.project-button > img {
+  margin-left: 14px;
+}
+
+.project-img-desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .popup {
+    width: 100%;
+    padding: 80px 140px;
+  }
+
+  .popup-content {
+    padding: 24px;
+  }
+
+  .popup-content > .project-text {
+    line-height: 30px;
+  }
+
+  .popup-project-img {
+    display: none;
+  }
+
+  .project-img-desktop {
+    display: initial;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .popup-content > .project-info-top {
+    margin-top: 16px;
+    margin-bottom: 36px;
+  }
+
+  .popup-bottom {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  .badges-buttons {
+    margin-left: 30px;
+  }
+
+  .badges-buttons > .project-languages {
+    margin-bottom: 20px;
+  }
+
+  .icon-cancel {
+    right: 30px;
+  }
+}
