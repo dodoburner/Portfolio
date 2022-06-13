@@ -28,3 +28,9 @@
   margin-bottom: 30px;
   max-width: fit-content;
 }
+
+@media only screen and (min-width: 768px) {
+  #mobile-menu {
+    display: none;
+  }
+}
