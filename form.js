@@ -1,6 +1,8 @@
 const form = document.getElementById('form');
 const buttonWrapper = document.getElementById('button-wrapper');
 const emailValue = document.getElementById('email');
+const nameValue = document.getElementById('name');
+const messageValue = document.getElementById('message')
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -15,3 +17,5 @@ form.addEventListener('submit', (e) => {
     form.submit();
   }
 });
+
+
