@@ -204,13 +204,12 @@
     transition: background-color ease-in 0.5s;
   }
 
-  .form-button {
+  #button-wrapper {
     align-self: center;
-    transition-property: transform;
-    transition-duration: 0.7s;
   }
 
-  .form-button:hover {
-    transform: scale(1.2);
+  .error-message {
+    padding: 10px 20px;
+    max-width: 150px;
   }
 }

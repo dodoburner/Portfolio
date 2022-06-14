@@ -75,7 +75,6 @@ textarea::-webkit-input-placeholder {
   height: 48px;
   font-family: inherit;
   margin-top: 22px;
-  align-self: flex-start;
 }
 
 ::-webkit-input-placeholder,
@@ -83,4 +82,20 @@ input {
   font-size: 17px;
   color: #172b4d;
   line-height: 20px;
+}
+
+#button-wrapper {
+  display: flex;
+  align-self: flex-start;
+}
+
+.error-message {
+  margin-left: 16px;
+  margin-top: 16px;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: rgba(255, 0, 0, 0.9);
+  color: white;
+  height: fit-content;
 }
