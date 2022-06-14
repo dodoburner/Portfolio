@@ -19,9 +19,18 @@ form.addEventListener('submit', (e) => {
 })
 
 let localData= JSON.parse(localStorage.getItem('userInput'))
+let formInput = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      message: document.getElementById('message').value,
+    }
+    
+localStorage.setItem('userInput', JSON.stringify(formInput));
+
+
 const isInputChange = (input) => {
   input.addEventListener('change', (e) => {
-    const formInput = {
+    formInput = {
       name: document.getElementById('name').value,
       email: document.getElementById('email').value,
       message: document.getElementById('message').value,
@@ -29,10 +38,8 @@ const isInputChange = (input) => {
     formInput[input.name] = e.target.value;
     localStorage.setItem('userInput', JSON.stringify(formInput));
     localData= JSON.parse(localStorage.getItem('userInput'))
-
-    console.log(localData)
   })
-}
+};
 
 nameValue.value= localData['name']
 emailValue.value= localData['email']
