@@ -16,6 +16,27 @@ form.addEventListener('submit', (e) => {
   } else {
     form.submit();
   }
-});
+})
 
+let localData= JSON.parse(localStorage.getItem('userInput'))
+const isInputChange = (input) => {
+  input.addEventListener('change', (e) => {
+    const formInput = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      message: document.getElementById('message').value,
+    }
+    formInput[input.name] = e.target.value;
+    localStorage.setItem('userInput', JSON.stringify(formInput));
+    localData= JSON.parse(localStorage.getItem('userInput'))
 
+    console.log(localData)
+  })
+}
+
+nameValue.value= localData['name']
+emailValue.value= localData['email']
+messageValue.value= localData['message']
+isInputChange(nameValue)
+isInputChange(emailValue)
+isInputChange(messageValue)
