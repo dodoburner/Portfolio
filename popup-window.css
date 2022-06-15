@@ -59,18 +59,23 @@
   margin-left: 14px;
 }
 
-.project-img-desktop {
+.project-img-desktop-popup {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
   .popup {
     width: 100%;
-    padding: 80px 140px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
   }
 
   .popup-content {
     padding: 24px;
+    max-width: 70%;
+    align-self: center;
   }
 
   .popup-content > .project-text {
@@ -81,9 +86,10 @@
     display: none;
   }
 
-  .project-img-desktop {
+  .project-img-desktop-popup {
     display: initial;
     width: 100%;
+    height: auto;
     margin-bottom: 60px;
   }
 

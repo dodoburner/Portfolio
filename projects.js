@@ -119,7 +119,7 @@ function createPopup(position) {
           <li class="project-year gray">${projects[position].jobDescription.year}</li>
         </ul>
 
-        <img class="project-img-desktop" src="images/desktop-images/img${position + 1}.png" alt="project tonic homepage">
+        <img class="project-img-desktop-popup" src="images/desktop-images/img${position + 1}.png" alt="project tonic homepage">
 
         <div class="popup-bottom">
           <p class="project-text">
