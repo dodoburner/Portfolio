@@ -5,6 +5,14 @@ const menuLinks = document.querySelectorAll('.menu-links');
 const body = document.querySelector('body');
 const header = document.querySelector('header');
 
+const mediaQuery = window.matchMedia('(min-width: 768px)');
+mediaQuery.addEventListener('change', () => {
+  if (!mobileMenu.classList.contains('display-none')) {
+    body.classList.toggle('not-scrollable');
+    header.classList.toggle('display-none');
+  }
+})
+
 const toggleMobileMenu = (el) => {
   el.addEventListener('click', () => {
     mobileMenu.classList.toggle('display-none');
