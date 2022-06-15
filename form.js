@@ -24,7 +24,6 @@ let formInput = {
   email: document.getElementById('email').value,
   message: document.getElementById('message').value,
 };
-localStorage.setItem('userInput', JSON.stringify(formInput));
 
 const isInputChange = (input) => {
   input.addEventListener('change', (e) => {
@@ -36,6 +35,7 @@ const isInputChange = (input) => {
     formInput[input.name] = e.target.value;
     localStorage.setItem('userInput', JSON.stringify(formInput));
     localData = JSON.parse(localStorage.getItem('userInput'));
+    console.log(localData)
   });
 };
 
