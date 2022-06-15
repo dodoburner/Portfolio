@@ -42,7 +42,7 @@ if (localData !== null) {
   nameValue.value = localData.name;
   emailValue.value = localData.email;
   messageValue.value = localData.message;
-};
+}
 
 isInputChange(nameValue);
 isInputChange(emailValue);
