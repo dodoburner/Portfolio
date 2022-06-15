@@ -57,7 +57,7 @@ mainSection.insertBefore(workSection, mainSection.children[1]);
 projects.forEach((project, index) => {
   const projectHTML = document.createElement('div');
   projectHTML.innerHTML = (`
-  <div class="project-section project1">
+  <div class="project-section">
     <img class="project-img" ${project.mobileImage}>
     <img class="project-img-desktop img${index + 1}" ${project.desktopImage}>
     
