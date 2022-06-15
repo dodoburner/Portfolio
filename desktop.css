@@ -133,20 +133,6 @@
     max-width: 447px;
   }
 
-  .intro-about-me {
-    font-size: 40px;
-    line-height: 52px;
-  }
-
-  .description-about-me {
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  .resume-button {
-    margin-top: 36px;
-  }
-
   .resume-list > ul {
     display: flex;
   }
