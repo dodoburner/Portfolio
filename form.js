@@ -35,7 +35,6 @@ const isInputChange = (input) => {
     formInput[input.name] = e.target.value;
     localStorage.setItem('userInput', JSON.stringify(formInput));
     localData = JSON.parse(localStorage.getItem('userInput'));
-    console.log(localData)
   });
 };
 
