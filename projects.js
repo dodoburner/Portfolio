@@ -93,9 +93,8 @@ projects.forEach((project, index) => {
         See Project
       </button>
     </div>
-
   `);
-  projectHTML.className = 'project-section'
+  projectHTML.className = 'project-section';
   workSection.appendChild(projectHTML);
 });
 

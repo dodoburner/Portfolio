@@ -11,7 +11,7 @@ mediaQuery.addEventListener('change', () => {
     body.classList.toggle('not-scrollable');
     header.classList.toggle('display-none');
   }
-})
+});
 
 const toggleMobileMenu = (el) => {
   el.addEventListener('click', () => {
