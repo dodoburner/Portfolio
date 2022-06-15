@@ -57,7 +57,6 @@ mainSection.insertBefore(workSection, mainSection.children[1]);
 projects.forEach((project, index) => {
   const projectHTML = document.createElement('div');
   projectHTML.innerHTML = (`
-  <div class="project-section project1">
     <img class="project-img" ${project.mobileImage}>
     <img class="project-img-desktop img${index + 1}" ${project.desktopImage}>
     
@@ -94,9 +93,8 @@ projects.forEach((project, index) => {
         See Project
       </button>
     </div>
-  </div>
-
   `);
+  projectHTML.className = 'project-section';
   workSection.appendChild(projectHTML);
 });
 
@@ -119,7 +117,7 @@ function createPopup(position) {
           <li class="project-year gray">${projects[position].jobDescription.year}</li>
         </ul>
 
-        <img class="project-img-desktop" src="images/desktop-images/img${position + 1}.png" alt="project tonic homepage">
+        <img class="project-img-desktop-popup" src="images/desktop-images/img${position + 1}.png" alt="project tonic homepage">
 
         <div class="popup-bottom">
           <p class="project-text">

@@ -7,8 +7,12 @@
   width: 375px;
   background: rgba(193, 199, 208, 0.8);
   backdrop-filter: blur(3px);
-  padding: 50px 16px;
+  padding-left: 16px;
+  padding-right: 16px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .popup-content > .project-info-top {
@@ -59,18 +63,22 @@
   margin-left: 14px;
 }
 
-.project-img-desktop {
+.project-img-desktop-popup {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
   .popup {
     width: 100%;
-    padding: 80px 140px;
+    justify-content: flex-start;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   .popup-content {
     padding: 24px;
+    max-width: 70%;
+    align-self: center;
   }
 
   .popup-content > .project-text {
@@ -81,7 +89,7 @@
     display: none;
   }
 
-  .project-img-desktop {
+  .project-img-desktop-popup {
     display: initial;
     width: 100%;
     margin-bottom: 60px;

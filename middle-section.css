@@ -118,6 +118,16 @@
   box-sizing: border-box;
 }
 
+.intro-about-me {
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.description-about-me {
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .resume-button {
   width: 162px;
   height: 48px;
@@ -167,5 +177,5 @@
 }
 
 #my-info > .connect {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
