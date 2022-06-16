@@ -92,12 +92,12 @@
   .project-img-desktop-popup {
     display: initial;
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 
   .popup-content > .project-info-top {
-    margin-top: 16px;
-    margin-bottom: 36px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 
   .popup-bottom {
@@ -115,5 +115,30 @@
 
   .icon-cancel {
     right: 30px;
+  }
+
+  .projects-navigation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30%;
+    margin-bottom: 10px;
+  }
+
+  .projects-navigation-buttons > button {
+    border: none;
+    font-family: inherit;
+    font-size: 16px;
+    background: none;
+    cursor: pointer;
+    color: #344563;
+    display: flex;
+    gap: 8px;
+  }
+
+  .projects-navigation-buttons > button:hover {
+    border-top: 1px solid #6070ff;
+    border-bottom: 1px solid #6070ff;
+    padding: 5px;
+    color: #6070ff;
   }
 }
