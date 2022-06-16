@@ -167,38 +167,37 @@ projectButton.forEach((btn, index) => {
   btn.addEventListener('click', () => {
     position = index;
     createPopup(index);
-    const popup = document.querySelector('.popup');
-    document.querySelector('.icon-cancel').addEventListener('click', () => {
-      workSection.removeChild(popup);
-      document.body.classList.toggle('not-scrollable');
-    });
-
-    const popupNavButton = document.querySelectorAll('.projects-navigation-buttons button');
-    popupNavButton.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        if (btn.classList.contains('previous') && position !== 0) {
-          const popup = document.querySelector('.popup');
-          workSection.removeChild(popup);
-          createPopup(position-1);
-          position--
-          listener()
-        }
-      })
-    })
+    popupClose()
+    popupNavigation()
   });
 });
 
-function listener() {
+function popupClose() {
+  const popup = document.querySelector('.popup');
+  document.querySelector('.icon-cancel').addEventListener('click', () => {
+    workSection.removeChild(popup);
+    document.body.classList.toggle('not-scrollable');
+  });
+}
+
+function popupNavigation() {
   const popupNavButton = document.querySelectorAll('.projects-navigation-buttons button');
   popupNavButton.forEach((btn) => {
     btn.addEventListener('click', () => {
+      const popup = document.querySelector('.popup');
       if (btn.classList.contains('previous') && position !== 0) {
-        const popup = document.querySelector('.popup');
         workSection.removeChild(popup);
         createPopup(position-1);
         position--
+        popupNavigation()
+        popupClose()
+      } else if (btn.classList.contains('next') && position !==3) {
+        workSection.removeChild(popup);
+        createPopup(position+1);
+        position++
+        popupNavigation()
+        popupClose()
       }
     })
   })
 }
-
