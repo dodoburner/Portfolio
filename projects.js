@@ -157,27 +157,48 @@ function createPopup(position) {
   `);
   popup.classList.add('popup');
   workSection.appendChild(popup);
-  document.body.classList.toggle('not-scrollable');
+  document.body.classList.add('not-scrollable');
 }
 
 const projectButton = document.querySelectorAll('.project-info .project-button');
+let position=0;
 
 projectButton.forEach((btn, index) => {
   btn.addEventListener('click', () => {
-    const position = index;
+    position = index;
     createPopup(index);
     const popup = document.querySelector('.popup');
     document.querySelector('.icon-cancel').addEventListener('click', () => {
       workSection.removeChild(popup);
       document.body.classList.toggle('not-scrollable');
     });
+
     const popupNavButton = document.querySelectorAll('.projects-navigation-buttons button');
     popupNavButton.forEach((btn) => {
       btn.addEventListener('click', () => {
-        if (btn.classList.contains('previous') && index !== 0) {
+        if (btn.classList.contains('previous') && position !== 0) {
+          const popup = document.querySelector('.popup');
+          workSection.removeChild(popup);
           createPopup(position-1);
+          position--
+          listener()
         }
       })
     })
   });
 });
+
+function listener() {
+  const popupNavButton = document.querySelectorAll('.projects-navigation-buttons button');
+  popupNavButton.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      if (btn.classList.contains('previous') && position !== 0) {
+        const popup = document.querySelector('.popup');
+        workSection.removeChild(popup);
+        createPopup(position-1);
+        position--
+      }
+    })
+  })
+}
+
