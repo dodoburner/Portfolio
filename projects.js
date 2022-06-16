@@ -144,11 +144,11 @@ function createPopup(position) {
           </div>
         </div>
         <div class="projects-navigation-buttons">
-            <button type="button">
+            <button type="button" class="previous">
             <svg width="20" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z"/></svg>
               previous project
             </button>
-            <button type="button">
+            <button type="button" class="next">
               next project
               <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z"/></svg>
             </button>
@@ -164,11 +164,20 @@ const projectButton = document.querySelectorAll('.project-info .project-button')
 
 projectButton.forEach((btn, index) => {
   btn.addEventListener('click', () => {
+    const position = index;
     createPopup(index);
     const popup = document.querySelector('.popup');
     document.querySelector('.icon-cancel').addEventListener('click', () => {
       workSection.removeChild(popup);
       document.body.classList.toggle('not-scrollable');
     });
+    const popupNavButton = document.querySelectorAll('.projects-navigation-buttons button');
+    popupNavButton.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        if (btn.classList.contains('previous') && index !== 0) {
+          createPopup(position-1);
+        }
+      })
+    })
   });
 });

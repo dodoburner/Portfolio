@@ -67,6 +67,10 @@
   display: none;
 }
 
+.projects-navigation-buttons {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   .popup {
     width: 100%;
@@ -102,7 +106,7 @@
 
   .popup-bottom {
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .badges-buttons {
