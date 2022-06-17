@@ -143,22 +143,61 @@ function createPopup(position) {
             </div>
           </div>
         </div>
+        <div class="projects-navigation-buttons">
+            <button type="button" class="previous">
+            <svg width="20" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z"/></svg>
+              previous project
+            </button>
+            <button type="button" class="next">
+              next project
+              <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z"/></svg>
+            </button>
+          </div>  
       </div>
   `);
   popup.classList.add('popup');
   workSection.appendChild(popup);
-  document.body.classList.toggle('not-scrollable');
+  document.body.classList.add('not-scrollable');
 }
 
 const projectButton = document.querySelectorAll('.project-info .project-button');
+let position = 0;
+
+function popupClose() {
+  const popup = document.querySelector('.popup');
+  document.querySelector('.icon-cancel').addEventListener('click', () => {
+    workSection.removeChild(popup);
+    document.body.classList.toggle('not-scrollable');
+  });
+}
+
+function popupNavigation() {
+  const popupNavButton = document.querySelectorAll('.projects-navigation-buttons button');
+  popupNavButton.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const popup = document.querySelector('.popup');
+      if (btn.classList.contains('previous') && position !== 0) {
+        workSection.removeChild(popup);
+        createPopup(position - 1);
+        position -= 1;
+        popupNavigation();
+        popupClose();
+      } else if (btn.classList.contains('next') && position !== 3) {
+        workSection.removeChild(popup);
+        createPopup(position + 1);
+        position += 1;
+        popupNavigation();
+        popupClose();
+      }
+    });
+  });
+}
 
 projectButton.forEach((btn, index) => {
   btn.addEventListener('click', () => {
+    position = index;
     createPopup(index);
-    const popup = document.querySelector('.popup');
-    document.querySelector('.icon-cancel').addEventListener('click', () => {
-      workSection.removeChild(popup);
-      document.body.classList.toggle('not-scrollable');
-    });
+    popupClose();
+    popupNavigation();
   });
 });
