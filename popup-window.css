@@ -34,6 +34,7 @@
   position: absolute;
   right: 15px;
   top: 30px;
+  cursor: pointer;
 }
 
 .popup-project-img {
