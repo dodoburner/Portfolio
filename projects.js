@@ -161,16 +161,7 @@ function createPopup(position) {
 }
 
 const projectButton = document.querySelectorAll('.project-info .project-button');
-let position=0;
-
-projectButton.forEach((btn, index) => {
-  btn.addEventListener('click', () => {
-    position = index;
-    createPopup(index);
-    popupClose()
-    popupNavigation()
-  });
-});
+let position = 0;
 
 function popupClose() {
   const popup = document.querySelector('.popup');
@@ -187,17 +178,26 @@ function popupNavigation() {
       const popup = document.querySelector('.popup');
       if (btn.classList.contains('previous') && position !== 0) {
         workSection.removeChild(popup);
-        createPopup(position-1);
-        position--
-        popupNavigation()
-        popupClose()
-      } else if (btn.classList.contains('next') && position !==3) {
+        createPopup(position - 1);
+        position -= 1;
+        popupNavigation();
+        popupClose();
+      } else if (btn.classList.contains('next') && position !== 3) {
         workSection.removeChild(popup);
-        createPopup(position+1);
-        position++
-        popupNavigation()
-        popupClose()
+        createPopup(position + 1);
+        position += 1;
+        popupNavigation();
+        popupClose();
       }
-    })
-  })
+    });
+  });
 }
+
+projectButton.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    position = index;
+    createPopup(index);
+    popupClose();
+    popupNavigation();
+  });
+});
