@@ -1,15 +1,17 @@
 const projects = [
   {
-    mobileImage: 'src="images/SnapshootPortfolio(0).jpg" alt="project tonic homepage"',
-    desktopImage: 'src="images/desktop-images/img1.png" alt="project tonic homepage"',
-    name: 'Tonic',
+    mobileImage: 'src="images/desktop-images/img1.png" alt="project tip calculator"',
+    desktopImage: 'src="images/desktop-images/img1.png" alt="project tip calculator"',
+    name: 'Tip Calculator',
     jobDescription: {
-      company: 'CANOPY',
-      role: 'Back End Dev',
-      year: '2015',
+      company: 'Frontend Mentor',
+      role: 'Student',
+      year: '2022',
     },
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: 'A simple calculator to calculate the tip between you and your friends on a night out',
     languages: ['html', 'css', 'javascript'],
+    source: 'https://github.com/dodoburner/tip-calculator',
+    live: 'https://dodoburner.github.io/tip-calculator/'
   },
   {
     mobileImage: 'src="images/SnapshootPortfolio(1).jpg" alt="project multi-post-stories homepage"',
@@ -133,12 +135,16 @@ function createPopup(position) {
   
             <div class="popup-buttons">
               <button type="button" class="project-button">
+              <a href="${projects[position].live}">
                 See live
                 <img src="images/popup-images/Icon-Export.svg" alt="">
+              </a> 
               </button>
               <button type="button" class="project-button">
-                See Source
-                <img src="images/popup-images/Icon -GitHub.svg" alt="">
+                <a href="${projects[position].source}">
+                  See Source
+                  <img src="images/popup-images/Icon -GitHub.svg" alt="">
+                </a>
               </button>
             </div>
           </div>

@@ -80,6 +80,10 @@
     margin-right: 46px;
   }
 
+  .img1 {
+    max-width: 600px;
+  }
+
   .img2,
   .img4 {
     order: 2;
