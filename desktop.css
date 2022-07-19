@@ -11,6 +11,11 @@
     width: auto;
   }
 
+  .highlight {
+    text-decoration: underline;
+    text-decoration-color: #6070ff;
+  }
+
   #hamburger-menu {
     display: none;
   }

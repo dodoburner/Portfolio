@@ -1,7 +1,7 @@
 const mobileMenu = document.getElementById('mobile-menu');
 const hamburgerMenu = document.getElementById('hamburger-menu');
 const menuClose = document.getElementById('menu-close');
-const menuLinks = document.querySelectorAll('.menu-links');
+const menuLinks = document.querySelectorAll('.menu-link');
 const body = document.querySelector('body');
 const header = document.querySelector('header');
 
@@ -26,4 +26,31 @@ toggleMobileMenu(menuClose);
 
 menuLinks.forEach((link) => {
   toggleMobileMenu(link);
+});
+
+const navLinks = document.querySelectorAll('.nav-link');
+
+window.addEventListener('scroll', () => {
+  const scrolled = window.scrollY + 200;
+  const workScroll = document.getElementById('work-section').offsetTop;
+  const aboutScroll = document.getElementById('about-me-section').offsetTop;
+  const formScroll = document.querySelector('footer').offsetTop;
+
+  if (scrolled >= formScroll) {
+    navLinks[0].classList.remove('highlight');
+    navLinks[1].classList.remove('highlight');
+    navLinks[2].classList.add('highlight');
+  } else if (scrolled >= aboutScroll) {
+    navLinks[0].classList.remove('highlight');
+    navLinks[1].classList.add('highlight');
+    navLinks[2].classList.remove('highlight');
+  } else if (scrolled >= workScroll) {
+    navLinks[0].classList.add('highlight');
+    navLinks[1].classList.remove('highlight');
+    navLinks[2].classList.remove('highlight');
+  } else {
+    navLinks[0].classList.remove('highlight');
+    navLinks[1].classList.remove('highlight');
+    navLinks[2].classList.remove('highlight');
+  }
 });
