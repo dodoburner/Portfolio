@@ -171,6 +171,7 @@
 
   form > p {
     max-width: 570px;
+    font-size: 20px;
   }
 
   #headline-container > .intro {
