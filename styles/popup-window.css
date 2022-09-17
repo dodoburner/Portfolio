@@ -141,9 +141,6 @@
   }
 
   .projects-navigation-buttons > button:hover {
-    border-top: 1px solid #6070ff;
-    border-bottom: 1px solid #6070ff;
-    padding: 5px;
     color: #6070ff;
   }
 }

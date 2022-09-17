@@ -71,7 +71,6 @@
     display: flex;
     width: 100%;
     padding: 24px;
-    overflow: auto;
   }
 
   .project-img {
@@ -79,10 +78,11 @@
   }
 
   .project-img-desktop {
-    display: initial;
-    max-width: 100%;
+    display: block;
+    width: 100%;
     height: auto;
     margin-right: 46px;
+    min-width: 0;
   }
 
   .img1 {
