@@ -3,7 +3,6 @@
   border-radius: 16px;
   background-color: white;
   box-sizing: border-box;
-  width: 327px;
   padding: 16px 16px 28px 16px;
 }
 
@@ -20,7 +19,7 @@
 
 .project-img {
   height: 225px;
-  width: 295px;
+  width: 100%;
 }
 
 .project-title {
