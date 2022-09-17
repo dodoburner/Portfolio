@@ -161,8 +161,15 @@
   box-sizing: border-box;
 }
 
-.resume-list-item > img {
+.resume-item-img {
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+}
+
+.arrow-img {
   margin-right: 16px;
+  cursor: pointer;
 }
 
 .resume-frameworks {
@@ -170,8 +177,7 @@
   margin-top: 36px;
 }
 
-.resume-frameworks,
-.resume-skills {
+.resume-list {
   border-bottom: 1px solid #dfe1e6;
 }
 
