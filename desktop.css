@@ -12,15 +12,15 @@
   }
 
   .highlight {
-    text-decoration: underline;
-    text-decoration-color: #6070ff;
+    color: #6070ff;
+    font-weight: bold;
   }
 
   #hamburger-menu {
     display: none;
   }
 
-  nav > ul > li > a {
+  nav > ul > li {
     color: #344563;
   }
 
