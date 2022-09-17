@@ -33,7 +33,7 @@
   #headline-container {
     background: url(images/desktop-images/Header\ bg.svg) no-repeat;
     background-position: left 50% top 0%;
-    padding: 240px 225px 180px;
+    padding: 225px 142px;
     border-bottom-left-radius: 150px;
   }
 
@@ -127,14 +127,13 @@
   }
 
   #about-me-section {
-    padding: 142px 142px 134px;
+    padding: 142px;
     display: flex;
     border-top-right-radius: 150px;
-    overflow: hidden;
   }
 
   #my-knowledge {
-    flex: 1;
+    width: 100%;
   }
 
   #my-info {
@@ -142,8 +141,9 @@
     max-width: 447px;
   }
 
-  .resume-list > ul {
+  .resume-list-content {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .resume-list-item {
@@ -207,4 +207,14 @@
     padding: 10px 20px;
     max-width: 150px;
   }
+}
+
+.display-none {
+  display: none;
+}
+
+.not-scrollable {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
 }

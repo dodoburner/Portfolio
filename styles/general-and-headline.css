@@ -30,16 +30,6 @@ body {
   padding-top: 75px;
 }
 
-.display-none {
-  display: none;
-}
-
-.not-scrollable {
-  margin: 0;
-  height: 100%;
-  overflow: hidden;
-}
-
 .blue {
   color: #6070ff;
 }
