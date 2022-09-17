@@ -11,11 +11,16 @@
     width: auto;
   }
 
+  .highlight {
+    color: #6070ff;
+    font-weight: bold;
+  }
+
   #hamburger-menu {
     display: none;
   }
 
-  nav > ul > li > a {
+  nav > ul > li {
     color: #344563;
   }
 
