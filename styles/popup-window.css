@@ -114,8 +114,8 @@
     margin-left: 30px;
   }
 
-  .badges-buttons > .project-languages {
-    margin-bottom: 20px;
+  .badges-buttons > .popup-project-languages > li {
+    margin-bottom: 5px;
   }
 
   .icon-cancel {

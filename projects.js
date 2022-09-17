@@ -1,7 +1,7 @@
 const projects = [
   {
-    mobileImage: 'src="images/desktop-images/img1.png" alt="project tip calculator"',
-    desktopImage: 'src="images/desktop-images/img1.png" alt="project tip calculator"',
+    mobileImage: "images/desktop-images/img1.png",
+    desktopImage: "images/desktop-images/img1.png",
     name: 'Tip Calculator',
     jobDescription: {
       company: 'Frontend Mentor',
@@ -14,20 +14,22 @@ const projects = [
     live: 'https://dodoburner.github.io/tip-calculator/'
   },
   {
-    mobileImage: 'src="images/SnapshootPortfolio(1).jpg" alt="project multi-post-stories homepage"',
-    desktopImage: 'src="images/desktop-images/img2.png" alt="project multi-post-stories homepage"',
-    name: 'Multi-Post Stories',
+    mobileImage: "images/air-pollution-img.jpg",
+    desktopImage: "images/air-pollution-img.png",
+    name: 'Air Pollution Data',
     jobDescription: {
-      company: 'FACEBOOK',
-      role: 'FullStack Dev',
-      year: '2015',
+      company: 'Microverse',
+      role: 'Student',
+      year: '2022',
     },
-    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    languages: ['html', 'css', 'javascript'],
+    description: 'This is a Single Page Application designed for mobile phones. It is created with React & Redux and uses 2 different API\'s to store a list of countries, cities and air pollution data for a given city. It has a search bar where you can directly look up for air pollution data of a city.',
+    languages: ['html', 'css', 'javascript', 'react', 'redux'],
+    source: 'https://github.com/dodoburner/City-Air-Pollution-Data',
+    live: 'https://city-air-pollution-app.netlify.app/'
   },
   {
-    mobileImage: 'src="images/SnapshootPortfolio(2).jpg" alt="project tonic homepage"',
-    desktopImage: 'src="images/desktop-images/img3.png" alt="project tonic homepage"',
+    mobileImage: "images/SnapshootPortfolio(2).jpg",
+    desktopImage: "images/desktop-images/img3.png",
     name: 'Facebook 360',
     jobDescription: {
       company: 'FACEBOOK',
@@ -38,16 +40,18 @@ const projects = [
     languages: ['html', 'css', 'javascript'],
   },
   {
-    mobileImage: 'src="images/SnapshootPortfolio(3).jpg" alt="project multi-post-stories homepage"',
-    desktopImage: 'src="images/desktop-images/img4.png" alt="project multi-post-stories homepage"',
-    name: 'Multi-Post Stories',
+    mobileImage: "images/tracker.png",
+    desktopImage: "images/tracker.png",
+    name: 'IP Adress Tracker',
     jobDescription: {
-      company: 'Uber',
-      role: 'Lead Developer',
-      year: '2018',
+      company: 'Frontend Mentor',
+      role: 'Student',
+      year: '2022',
     },
-    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    description: 'Web App that shows  info about the user\'s public IP address and displays the location on a map. The user can search for info about other IP adresses using the search bar.',
     languages: ['html', 'css', 'javascript'],
+    source: 'https://github.com/dodoburner/IP-Adress-Tracker',
+    live: 'https://dodoburner.github.io/IP-Adress-Tracker/'
   },
 ];
 
@@ -60,7 +64,7 @@ projects.forEach((project, index) => {
   const projectHTML = document.createElement('div');
   projectHTML.innerHTML = (`
     <img class="project-img" ${project.mobileImage}>
-    <img class="project-img-desktop img${index + 1}" ${project.desktopImage}>
+    <img class="project-img-desktop img${index + 1}" src=${project.desktopImage}>
     
     <div class="project-info">
       <h3 class="project-title">
@@ -86,9 +90,6 @@ projects.forEach((project, index) => {
       </p>
 
       <ul class="project-languages">
-        <li class="language">${project.languages[0]}</li>
-        <li class="language">${project.languages[1]}</li>
-        <li class="language">${project.languages[2]}</li>
       </ul>
 
       <button type="button" class="project-button">
@@ -98,6 +99,13 @@ projects.forEach((project, index) => {
   `);
   projectHTML.className = 'project-section';
   workSection.appendChild(projectHTML);
+  const ul = document.querySelectorAll('.project-languages')[index];
+  project.languages.forEach((language) => {
+    const li = document.createElement('li');
+    li.classList.add('language');
+    li.innerHTML = `${language}`
+    ul.appendChild(li)
+  })
 });
 
 function createPopup(position) {
@@ -109,7 +117,7 @@ function createPopup(position) {
         </h3>
 
         <img class="icon-cancel" src="images/popup-images/Icon-Cancel-Gray.svg" alt="">
-        <img class="popup-project-img" src="images/SnapshootPortfolio(${position}).jpg" alt="">
+        <img class="popup-project-img" src=${projects[position].desktopImage} alt="">
 
         <ul class="project-info-top">
           <li class="job-place">${projects[position].jobDescription.company}</li>
@@ -119,7 +127,7 @@ function createPopup(position) {
           <li class="project-year gray">${projects[position].jobDescription.year}</li>
         </ul>
 
-        <img class="project-img-desktop-popup" src="images/desktop-images/img${position + 1}.png" alt="project tonic homepage">
+        <img class="project-img-desktop-popup"  src=${projects[position].desktopImage} alt="">
 
         <div class="popup-bottom">
           <p class="project-text">
@@ -127,10 +135,7 @@ function createPopup(position) {
           </p>
 
           <div class="badges-buttons">
-            <ul class="project-languages">
-              <li class="language">${projects[position].languages[0]}</li>
-              <li class="language">${projects[position].languages[1]}</li>
-              <li class="language">${projects[position].languages[2]}</li>
+            <ul class="popup-project-languages">
             </ul>
   
             <div class="popup-buttons">
@@ -162,6 +167,13 @@ function createPopup(position) {
   popup.classList.add('popup');
   workSection.appendChild(popup);
   document.body.classList.add('not-scrollable');
+  const ul = document.querySelector('.popup-project-languages');
+  projects[position].languages.forEach((language) => {
+    const li = document.createElement('li');
+    li.classList.add('language');
+    li.innerHTML = `${language}`
+    ul.appendChild(li)
+  })
 }
 
 const projectButton = document.querySelectorAll('.project-info .project-button');
