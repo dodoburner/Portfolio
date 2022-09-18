@@ -1,6 +1,6 @@
 const projects = [
   {
-    img: "images/desktop-images/img1.png",
+    img: 'images/desktop-images/img1.png',
     name: 'Tip Calculator',
     jobDescription: {
       company: 'Frontend Mentor',
@@ -10,10 +10,10 @@ const projects = [
     description: 'A simple calculator to calculate the tip between you and your friends on a night out',
     languages: ['html', 'css', 'javascript'],
     source: 'https://github.com/dodoburner/tip-calculator',
-    live: 'https://dodoburner.github.io/tip-calculator/'
+    live: 'https://dodoburner.github.io/tip-calculator/',
   },
   {
-    img: "images/air-pollution-img.png",
+    img: 'images/air-pollution-img.png',
     name: 'Air Pollution Data',
     jobDescription: {
       company: 'Microverse',
@@ -23,10 +23,10 @@ const projects = [
     description: 'This is a Single Page Application designed for mobile phones. It is created with React & Redux and uses 2 different API\'s to store a list of countries, cities and air pollution data for a given city. It has a search bar where you can directly look up for air pollution data of a city.',
     languages: ['html', 'css', 'javascript', 'react', 'redux'],
     source: 'https://github.com/dodoburner/City-Air-Pollution-Data',
-    live: 'https://city-air-pollution-app.netlify.app/'
+    live: 'https://city-air-pollution-app.netlify.app/',
   },
   {
-    img: "images/dl-img.png",
+    img: 'images/dl-img.png',
     name: 'Dog Lovers Summit',
     jobDescription: {
       company: 'Microverse',
@@ -36,10 +36,10 @@ const projects = [
     description: ' A responsive website for a conference built with the mobile first approach. It has 2 pages; home and about.',
     languages: ['html', 'css', 'javascript'],
     source: 'https://github.com/dodoburner/DL-Global-Summit',
-    live: 'https://dodoburner.github.io/DL-Global-Summit/'
+    live: 'https://dodoburner.github.io/DL-Global-Summit/',
   },
   {
-    img: "images/tracker.png",
+    img: 'images/tracker.png',
     name: 'IP Adress Tracker',
     jobDescription: {
       company: 'Frontend Mentor',
@@ -49,7 +49,7 @@ const projects = [
     description: 'Web App that shows  info about the user\'s public IP address and displays the location on a map. The user can search for info about other IP adresses using the search bar.',
     languages: ['html', 'css', 'javascript'],
     source: 'https://github.com/dodoburner/IP-Adress-Tracker',
-    live: 'https://dodoburner.github.io/IP-Adress-Tracker/'
+    live: 'https://dodoburner.github.io/IP-Adress-Tracker/',
   },
 ];
 
@@ -101,9 +101,9 @@ projects.forEach((project, index) => {
   project.languages.forEach((language) => {
     const li = document.createElement('li');
     li.classList.add('language');
-    li.innerHTML = `${language}`
-    ul.appendChild(li)
-  })
+    li.innerHTML = `${language}`;
+    ul.appendChild(li);
+  });
 });
 
 function createPopup(position) {
@@ -169,9 +169,9 @@ function createPopup(position) {
   projects[position].languages.forEach((language) => {
     const li = document.createElement('li');
     li.classList.add('language');
-    li.innerHTML = `${language}`
-    ul.appendChild(li)
-  })
+    li.innerHTML = `${language}`;
+    ul.appendChild(li);
+  });
 }
 
 const projectButton = document.querySelectorAll('.project-info .project-button');
