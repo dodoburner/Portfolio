@@ -45,6 +45,11 @@
 .popup-project-languages {
   display: flex;
   margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.language {
+  margin-bottom: 5px;
 }
 
 .popup-buttons {

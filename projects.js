@@ -1,7 +1,6 @@
 const projects = [
   {
-    mobileImage: "images/desktop-images/img1.png",
-    desktopImage: "images/desktop-images/img1.png",
+    img: "images/desktop-images/img1.png",
     name: 'Tip Calculator',
     jobDescription: {
       company: 'Frontend Mentor',
@@ -14,8 +13,7 @@ const projects = [
     live: 'https://dodoburner.github.io/tip-calculator/'
   },
   {
-    mobileImage: "images/air-pollution-img.jpg",
-    desktopImage: "images/air-pollution-img.png",
+    img: "images/air-pollution-img.png",
     name: 'Air Pollution Data',
     jobDescription: {
       company: 'Microverse',
@@ -28,8 +26,7 @@ const projects = [
     live: 'https://city-air-pollution-app.netlify.app/'
   },
   {
-    mobileImage: "images/SnapshootPortfolio(2).jpg",
-    desktopImage: "images/desktop-images/img3.png",
+    img: "images/desktop-images/img3.png",
     name: 'Facebook 360',
     jobDescription: {
       company: 'FACEBOOK',
@@ -40,8 +37,7 @@ const projects = [
     languages: ['html', 'css', 'javascript'],
   },
   {
-    mobileImage: "images/tracker.png",
-    desktopImage: "images/tracker.png",
+    img: "images/tracker.png",
     name: 'IP Adress Tracker',
     jobDescription: {
       company: 'Frontend Mentor',
@@ -63,8 +59,8 @@ mainSection.insertBefore(workSection, mainSection.children[1]);
 projects.forEach((project, index) => {
   const projectHTML = document.createElement('div');
   projectHTML.innerHTML = (`
-    <img class="project-img" ${project.mobileImage}>
-    <img class="project-img-desktop img${index + 1}" src=${project.desktopImage}>
+    <img class="project-img" src=${project.img}>
+    <img class="project-img-desktop img${index + 1}" src=${project.img}>
     
     <div class="project-info">
       <h3 class="project-title">
@@ -117,7 +113,7 @@ function createPopup(position) {
         </h3>
 
         <img class="icon-cancel" src="images/popup-images/Icon-Cancel-Gray.svg" alt="">
-        <img class="popup-project-img" src=${projects[position].desktopImage} alt="">
+        <img class="popup-project-img" src=${projects[position].img} alt="">
 
         <ul class="project-info-top">
           <li class="job-place">${projects[position].jobDescription.company}</li>
