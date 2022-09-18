@@ -5,12 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dorian's Portfolio</title>
-  <link rel="stylesheet" href="general-and-headline.css">
-  <link rel="stylesheet" href="middle-section.css">
-  <link rel="stylesheet" href="footer.css">
-  <link rel="stylesheet" href="desktop.css">
-  <link rel="stylesheet" href="mobile-menu.css">
-  <link rel="stylesheet" href="popup-window.css">
+  <link rel="stylesheet" href="./styles/general-and-headline.css">
+  <link rel="stylesheet" href="./styles/middle-section.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="./styles/mobile-menu.css">
+  <link rel="stylesheet" href="./styles/popup-window.css">
+  <link rel="stylesheet" href="./styles/desktop.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -30,7 +30,7 @@
  
   <header>
     <a href="#" class="blue logo">
-      My Logo
+      DorianUrem
     </a>
 
     <nav id="navigation-menu">
@@ -59,11 +59,11 @@
         </p>
     
         <ul class="social-icons"> 
-          <li><a class="social-media-icon" href=""><img src="images/social-icons/Vector.svg" alt="twitter link"></a></li>
-          <li><a class="social-media-icon" href=""><img src="images/social-icons/Linkedinicon.svg" alt="linked-in link"></a></li>
-          <li><a class="social-media-icon" href=""><img src="images/social-icons/Vector(2).svg" alt="medium link"></a></li>
-          <li><a class="social-media-icon" href=""><img src="images/social-icons/Vector(1).svg" alt="github link"></a></li>
-          <li><a class="social-media-icon" href=""><img src="images/social-icons/Vector(3).svg" alt="angellist link"></a></li>
+          <li><a class="social-media-icon" href="https://twitter.com/DorianUrem" target=”_blank”><img src="images/social-icons/Vector.svg" alt="twitter link"></a></li>
+          <li><a class="social-media-icon" href="https://www.linkedin.com/in/dorian-urem/" target=”_blank”><img src="images/social-icons/Linkedinicon.svg" alt="linked-in link"></a></li>
+          <li><a class="social-media-icon" href="https://medium.com/@uremdorian" target=”_blank”><img src="images/social-icons/Vector(2).svg" alt="medium link"></a></li>
+          <li><a class="social-media-icon" href="https://github.com/dodoburner" target=”_blank”><img src="images/social-icons/Vector(1).svg" alt="github link"></a></li>
+          <li><a class="social-media-icon" href="https://angel.co/u/dorian-urem" target=”_blank”><img src="images/social-icons/Vector(3).svg" alt="angellist link"></a></li>
         </ul>
       </div>
     </section>
@@ -83,11 +83,11 @@
         </p>
     
         <ul class="social-icons"> 
-          <li><a class="social-media-icon" href=""><img src="images/social-icons/Vector.svg" alt="twitter link"></a></li>
-          <li><a class="social-media-icon" href=""><img src="images/social-icons/Linkedinicon.svg" alt="linked-in link"></a></li>
-          <li><a class="social-media-icon" href=""><img src="images/social-icons/Vector(2).svg" alt="medium link"></a></li>
-          <li><a class="social-media-icon" href=""><img src="images/social-icons/Vector(1).svg" alt="github link"></a></li>
-          <li><a class="social-media-icon" href=""><img src="images/social-icons/Vector(3).svg" alt="angellist link"></a></li>
+          <li><a class="social-media-icon" href="https://twitter.com/DorianUrem" target=”_blank”><img src="images/social-icons/Vector.svg" alt="twitter link"></a></li>
+          <li><a class="social-media-icon" href="https://www.linkedin.com/in/dorian-urem/" target=”_blank”><img src="images/social-icons/Linkedinicon.svg" alt="linked-in link"></a></li>
+          <li><a class="social-media-icon" href="https://medium.com/@uremdorian" target=”_blank”><img src="images/social-icons/Vector(2).svg" alt="medium link"></a></li>
+          <li><a class="social-media-icon" href="https://github.com/dodoburner" target=”_blank”><img src="images/social-icons/Vector(1).svg" alt="github link"></a></li>
+          <li><a class="social-media-icon" href="https://angel.co/u/dorian-urem" target=”_blank”><img src="images/social-icons/Vector(3).svg" alt="angellist link"></a></li>
         </ul>
   
         <button type="button" class="project-button resume-button">
@@ -101,21 +101,27 @@
             <p>
               Languages
              </p>
-             <img src="images/icon-down.png" alt="">Screenshot (25).png
+             <img class="arrow-img" src="images/icon-right.png" alt="">
           </div>
-          <ul>
-            <li class="resume-list-item"><img src="images/Ellipse1.png" alt="javascript logo">JavaScript</li>
-            <li class="resume-list-item"><img src="images/Ellipse1(1).png" alt="html logo">HTML</li>
-            <li class="resume-list-item"><img src="images/Ellipse1(2).png" alt="css logo">CSS</li>
+          <ul class="resume-list-content display-none">
+            <li class="resume-list-item"><img class="resume-item-img" src="images/js-logo.png" alt="javascript logo">JavaScript</li>
+            <li class="resume-list-item"><img class="resume-item-img" src="images/html-logo.png" alt="html logo">HTML</li>
+            <li class="resume-list-item"><img class="resume-item-img" src="images/css-logo.png" alt="css logo">CSS</li>
+            <li class="resume-list-item"><img class="resume-item-img"src="images/psql-logo.png" alt="sql logo">PostgreSQL</li>
           </ul>
         </li>
 
         <li class="resume-list resume-frameworks">
           <div class="knowledge-type-container">
             <p>
-              Frameworks
+              Frameworks & Libraries
             </p>
-            <img src="images/icon-right.png" alt=""></div>
+            <img class="arrow-img" src="images/icon-right.png" alt="">
+          </div>
+          <ul class="resume-list-content display-none">
+            <li class="resume-list-item"><img class="resume-item-img" src="images/react-logo.png" alt="react logo">React</li>
+            <li class="resume-list-item"><img class="resume-item-img" src="images/redux-logo.png" alt="redux logo">Redux</li>
+          </ul>
         </li>
 
         <li class="resume-list resume-skills">
@@ -123,8 +129,14 @@
             <p>
               Skills
             </p>
-            <img src="images/icon-right.png" alt="">
+            <img class="arrow-img" src="images/icon-right.png" alt="">
           </div>
+          <ul class="resume-list-content display-none">
+            <li class="resume-list-item">Git & GitHub</li>
+            <li class="resume-list-item">Mobile / Responsive Development</li>
+            <li class="resume-list-item">TDD</li>
+            <li class="resume-list-item">Chrome DevTools</li>
+          </ul>
         </li>
       </ul>
     </section>

@@ -21,22 +21,13 @@ li {
 body {
   font-family: 'Poppins', sans-serif;
   background: #f7f7f9;
-  display: flex;
+
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: relative; */
   padding-top: 75px;
-}
-
-.display-none {
-  display: none;
-}
-
-.not-scrollable {
-  margin: 0;
-  height: 100%;
-  overflow: hidden;
 }
 
 .blue {
@@ -52,13 +43,14 @@ header {
   box-sizing: border-box;
   position: fixed;
   top: 0;
-  width: 375px;
+  left: 0;
+  right: 0;
 }
 
 .logo {
   font-size: 18px;
   font-weight: 700;
-  margin-right: 223px;
+  margin-right: auto;
   white-space: nowrap;
   cursor: pointer;
 }
@@ -77,9 +69,6 @@ nav > ul {
 }
 
 #headline-container {
-  background:
-    url(images/header-shapes\ mobile.svg) no-repeat,
-    white;
   padding-top: 114px;
   padding-bottom: 136px;
   padding-left: 24px;
@@ -98,7 +87,7 @@ nav > ul {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  width: 327px;
+  width: 80%;
   margin-bottom: 12px;
 }
 

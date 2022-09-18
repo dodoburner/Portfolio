@@ -12,7 +12,6 @@ form {
   background-color: #6070ff;
   padding: 103px 24px 45px 24px;
   border-top-left-radius: 100px;
-  width: 375px;
   box-sizing: border-box;
 }
 
@@ -27,7 +26,7 @@ form > h2 {
 
 form > p {
   color: #ebebff;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 28px;
   text-align: center;
   margin-bottom: 60px;

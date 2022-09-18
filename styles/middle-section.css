@@ -3,7 +3,6 @@
   border-radius: 16px;
   background-color: white;
   box-sizing: border-box;
-  width: 327px;
   padding: 16px 16px 28px 16px;
 }
 
@@ -20,7 +19,7 @@
 
 .project-img {
   height: 225px;
-  width: 295px;
+  width: 100%;
 }
 
 .project-title {
@@ -147,7 +146,6 @@
   font-size: 20px;
   line-height: 24px;
   justify-content: space-between;
-  padding-right: 30px;
 }
 
 .resume-list-item {
@@ -162,8 +160,14 @@
   box-sizing: border-box;
 }
 
-.resume-list-item > img {
-  margin-right: 16px;
+.resume-item-img {
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+}
+
+.arrow-img {
+  cursor: pointer;
 }
 
 .resume-frameworks {
@@ -171,8 +175,7 @@
   margin-top: 36px;
 }
 
-.resume-frameworks,
-.resume-skills {
+.resume-list {
   border-bottom: 1px solid #dfe1e6;
 }
 
