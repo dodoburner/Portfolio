@@ -33,7 +33,7 @@ const projects = [
       role: 'Student',
       year: '2022',
     },
-    description: 'A responsive website with 2 pages; home and about page.',
+    description: ' A responsive website for a conference built with the mobile first approach. It has 2 pages; home and about.',
     languages: ['html', 'css', 'javascript'],
     source: 'https://github.com/dodoburner/DL-Global-Summit',
     live: 'https://dodoburner.github.io/DL-Global-Summit/'
