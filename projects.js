@@ -26,15 +26,17 @@ const projects = [
     live: 'https://city-air-pollution-app.netlify.app/'
   },
   {
-    img: "images/desktop-images/img3.png",
-    name: 'Facebook 360',
+    img: "images/dl-img.png",
+    name: 'Dog Lovers Summit',
     jobDescription: {
-      company: 'FACEBOOK',
-      role: 'FullStack Dev',
-      year: '2015',
+      company: 'Microverse',
+      role: 'Student',
+      year: '2022',
     },
-    description: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+    description: 'A responsive website with 2 pages; home and about page.',
     languages: ['html', 'css', 'javascript'],
+    source: 'https://github.com/dodoburner/DL-Global-Summit',
+    live: 'https://dodoburner.github.io/DL-Global-Summit/'
   },
   {
     img: "images/tracker.png",
