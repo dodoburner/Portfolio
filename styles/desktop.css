@@ -80,12 +80,9 @@
   .project-img-desktop {
     display: block;
     width: 100%;
-    height: auto;
     margin-right: 46px;
-    min-width: 0;
-  }
-
-  .img1 {
+    min-width: 200px;
+    height: 400px;
     max-width: 600px;
   }
 
@@ -98,6 +95,8 @@
 
   .project-info {
     margin-top: 16px;
+    max-width: 600px;
+    min-width: 0;
   }
 
   .project-title {

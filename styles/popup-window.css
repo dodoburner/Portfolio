@@ -42,6 +42,11 @@
   margin-bottom: 12px;
 }
 
+.popup-project-languages {
+  display: flex;
+  margin-bottom: 10px;
+}
+
 .popup-buttons {
   display: grid;
   grid-template-rows: 1fr;
@@ -112,10 +117,6 @@
 
   .badges-buttons {
     margin-left: 30px;
-  }
-
-  .badges-buttons > .popup-project-languages > li {
-    margin-bottom: 5px;
   }
 
   .icon-cancel {
