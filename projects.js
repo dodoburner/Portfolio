@@ -39,6 +39,12 @@ const projects = [
 
 const workSection = document.createElement('section');
 workSection.id = 'work-section';
+workSection.innerHTML = `
+  <button class="see-more-btn">
+  SEE MORE
+  <img class="arrow-img" src="images/icon-down.png" alt="">
+  </button>
+`;
 const mainSection = document.querySelector('main');
 mainSection.insertBefore(workSection, mainSection.children[1]);
 
@@ -62,13 +68,13 @@ projects.forEach((project, index) => {
 
       <div class="project-buttons">
         <button type="button" class="project-button">
-        <a href="${project.live}">
+        <a href="${project.live}" target="_blank">
           See live
           <img src="images/popup-images/Icon-Export.svg" alt="">
         </a> 
         </button>
         <button type="button" class="project-button">
-          <a href="${project.source}">
+          <a href="${project.source}" target="_blank">
             See Source
             <img src="images/popup-images/Icon -GitHub.svg" alt="">
           </a>

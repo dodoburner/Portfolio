@@ -39,6 +39,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10;
 }
 
 #hamburger-menu {
@@ -63,11 +64,8 @@ nav > ul {
 }
 
 #headline-container {
-  padding-top: 114px;
-  padding-bottom: 136px;
-  padding-left: 24px;
+  padding: 114px 24px 144px;
   border-bottom-left-radius: 100px;
-  max-width: 900px;
 }
 
 .intro {
