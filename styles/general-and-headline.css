@@ -19,7 +19,7 @@ li {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background: #f7f7f9;
   padding-top: 75px;
 }
@@ -51,6 +51,10 @@ nav {
 
 nav > ul {
   display: none;
+}
+
+.nav-link:hover {
+  color: #6070ff;
 }
 
 #headline-section {

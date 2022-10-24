@@ -146,6 +146,11 @@
   font-size: 20px;
   line-height: 24px;
   justify-content: space-between;
+  cursor: pointer;
+}
+
+.knowledge-type-container:hover {
+  color: #6070ff;
 }
 
 .resume-list-item {
@@ -164,10 +169,6 @@
   height: 50px;
   width: 50px;
   margin-right: 20px;
-}
-
-.arrow-img {
-  cursor: pointer;
 }
 
 .resume-frameworks {
