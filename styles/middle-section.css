@@ -62,18 +62,46 @@
 }
 
 .project-button {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
   font-family: inherit;
   padding: 12px;
   border: 1px solid #6070ff;
   background-color: white;
   border-radius: 8px;
   color: #396df2;
-  font-weight: 500;
-  font-size: 17px;
   letter-spacing: 0.03em;
-  line-height: 24px;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.project-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-buttons {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 12px;
+  border-top: 1px solid #ebecf0;
+  padding-top: 25px;
+}
+
+/* .popup-buttons > .project-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+} */
+
+.project-button > img {
+  margin-left: 14px;
 }
 
 .project-button:disabled {
