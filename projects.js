@@ -1,6 +1,6 @@
 const projects = [
   {
-    img: 'images/desktop-images/img1.png',
+    img: 'images/img1.png',
     name: 'Tip Calculator',
     description:
       'A simple calculator to calculate the tip between you and your friends on a night out',
@@ -60,7 +60,7 @@ projects.forEach((project, index) => {
       <ul class="project-languages">
       </ul>
 
-      <div class="popup-buttons">
+      <div class="project-buttons">
         <button type="button" class="project-button">
         <a href="${project.live}">
           See live
@@ -86,105 +86,3 @@ projects.forEach((project, index) => {
     ul.appendChild(li);
   });
 });
-
-// function createPopup(position) {
-//   const popup = document.createElement('div');
-//   popup.innerHTML = (`
-//     <div class="popup-content">
-//         <h3 class="project-title">
-//            ${projects[position].name}
-//         </h3>
-
-//         <img class="icon-cancel" src="images/popup-images/Icon-Cancel-Gray.svg" alt="">
-//         <img class="popup-project-img" src=${projects[position].img} alt="">
-
-//         <img class="project-img-desktop-popup"  src=${projects[position].img} alt="">
-
-//         <div class="popup-bottom">
-//           <p class="project-text">
-//             ${projects[position].description}
-//           </p>
-
-//           <div class="badges-buttons">
-//             <ul class="popup-project-languages">
-//             </ul>
-
-//             <div class="popup-buttons">
-//               <button type="button" class="project-button">
-//               <a href="${projects[position].live}">
-//                 See live
-//                 <img src="images/popup-images/Icon-Export.svg" alt="">
-//               </a>
-//               </button>
-//               <button type="button" class="project-button">
-//                 <a href="${projects[position].source}">
-//                   See Source
-//                   <img src="images/popup-images/Icon -GitHub.svg" alt="">
-//                 </a>
-//               </button>
-//             </div>
-//           </div>
-//         </div>
-//         <div class="projects-navigation-buttons">
-//             <button type="button" class="previous">
-//               previous project
-//             </button>
-//             <button type="button" class="next">
-//               next project
-//             </button>
-//           </div>
-//       </div>
-//   `);
-//   popup.classList.add('popup');
-//   workSection.appendChild(popup);
-//   document.body.classList.add('not-scrollable');
-//   const ul = document.querySelector('.popup-project-languages');
-//   projects[position].languages.forEach((language) => {
-//     const li = document.createElement('li');
-//     li.classList.add('language');
-//     li.innerHTML = `${language}`;
-//     ul.appendChild(li);
-//   });
-// }
-
-// const projectButton = document.querySelectorAll('.project-info .project-button');
-// let position = 0;
-
-// function popupClose() {
-//   const popup = document.querySelector('.popup');
-//   document.querySelector('.icon-cancel').addEventListener('click', () => {
-//     workSection.removeChild(popup);
-//     document.body.classList.toggle('not-scrollable');
-//   });
-// }
-
-// function popupNavigation() {
-//   const popupNavButton = document.querySelectorAll('.projects-navigation-buttons button');
-//   popupNavButton.forEach((btn) => {
-//     btn.addEventListener('click', () => {
-//       const popup = document.querySelector('.popup');
-//       if (btn.classList.contains('previous') && position !== 0) {
-//         workSection.removeChild(popup);
-//         createPopup(position - 1);
-//         position -= 1;
-//         popupNavigation();
-//         popupClose();
-//       } else if (btn.classList.contains('next') && position !== 3) {
-//         workSection.removeChild(popup);
-//         createPopup(position + 1);
-//         position += 1;
-//         popupNavigation();
-//         popupClose();
-//       }
-//     });
-//   });
-// }
-
-// projectButton.forEach((btn, index) => {
-//   btn.addEventListener('click', () => {
-//     position = index;
-//     createPopup(index);
-//     popupClose();
-//     popupNavigation();
-//   });
-// });
