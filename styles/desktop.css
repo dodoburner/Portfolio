@@ -150,13 +150,17 @@
     background: url(images/desktop-images/contact-form-background-desktop.svg) no-repeat;
     background-size: contain;
     background-color: #6070ff;
-    padding-top: 140px;
+    padding-top: 80px;
     padding-bottom: 130px;
   }
 
   input,
   textarea {
     max-width: 447px;
+  }
+
+  form > h2 {
+    margin-bottom: 40px;
   }
 
   form > p {
