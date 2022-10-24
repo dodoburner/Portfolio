@@ -32,20 +32,6 @@
   margin-top: 12px;
 }
 
-.project-info-top {
-  display: flex;
-  align-items: center;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-  margin-bottom: 12px;
-  margin-top: 12px;
-}
-
-.project-info-top > * {
-  margin-right: 12px;
-}
-
 .gray {
   color: #7a869a;
 }

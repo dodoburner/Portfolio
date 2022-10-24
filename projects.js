@@ -2,11 +2,6 @@ const projects = [
   {
     img: 'images/desktop-images/img1.png',
     name: 'Tip Calculator',
-    jobDescription: {
-      company: 'Frontend Mentor',
-      role: 'Student',
-      year: '2022',
-    },
     description: 'A simple calculator to calculate the tip between you and your friends on a night out',
     languages: ['html', 'css', 'javascript'],
     source: 'https://github.com/dodoburner/tip-calculator',
@@ -15,11 +10,6 @@ const projects = [
   {
     img: 'images/air-pollution-img.png',
     name: 'Air Pollution Data',
-    jobDescription: {
-      company: 'Microverse',
-      role: 'Student',
-      year: '2022',
-    },
     description: 'This is a Single Page Application designed for mobile phones. It is created with React & Redux and uses 2 different API\'s to store a list of countries, cities and air pollution data for a given city. It has a search bar where you can directly look up for air pollution data of a city.',
     languages: ['html', 'css', 'javascript', 'react', 'redux'],
     source: 'https://github.com/dodoburner/City-Air-Pollution-Data',
@@ -28,11 +18,6 @@ const projects = [
   {
     img: 'images/dl-img.png',
     name: 'Dog Lovers Summit',
-    jobDescription: {
-      company: 'Microverse',
-      role: 'Student',
-      year: '2022',
-    },
     description: ' A responsive website for a conference built with the mobile first approach. It has 2 pages; home and about.',
     languages: ['html', 'css', 'javascript'],
     source: 'https://github.com/dodoburner/DL-Global-Summit',
@@ -41,11 +26,6 @@ const projects = [
   {
     img: 'images/tracker.png',
     name: 'IP Adress Tracker',
-    jobDescription: {
-      company: 'Frontend Mentor',
-      role: 'Student',
-      year: '2022',
-    },
     description: 'Web App that shows  info about the user\'s public IP address and displays the location on a map. The user can search for info about other IP adresses using the search bar.',
     languages: ['html', 'css', 'javascript'],
     source: 'https://github.com/dodoburner/IP-Adress-Tracker',
@@ -68,20 +48,6 @@ projects.forEach((project, index) => {
       <h3 class="project-title">
         ${project.name}
       </h3>
-
-      <div class="project-info-top">
-        <p class="job-place">
-          ${project.jobDescription.company}
-        </p>
-        <img class="circle" src="images/Counter.svg" alt="">
-        <p class="job-title gray">
-          ${project.jobDescription.role}
-        </p>
-        <img class="circle" src="images/Counter.svg" alt="">
-        <p class="project-year gray">
-          ${project.jobDescription.year}
-        </p>
-      </div>
 
       <p class="project-text">
         ${project.description}
@@ -117,15 +83,7 @@ function createPopup(position) {
         <img class="icon-cancel" src="images/popup-images/Icon-Cancel-Gray.svg" alt="">
         <img class="popup-project-img" src=${projects[position].img} alt="">
 
-        <ul class="project-info-top">
-          <li class="job-place">${projects[position].jobDescription.company}</li>
-          <img class="circle" src="images/Counter.svg" alt="">
-          <li class="job-title gray">${projects[position].jobDescription.role}</li>
-          <img class="circle" src="images/Counter.svg" alt="">
-          <li class="project-year gray">${projects[position].jobDescription.year}</li>
-        </ul>
-
-        <img class="project-img-desktop-popup"  src=${projects[position].desktopImage} alt="">
+        <img class="project-img-desktop-popup"  src=${projects[position].img} alt="">
 
         <div class="popup-bottom">
           <p class="project-text">
