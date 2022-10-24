@@ -41,16 +41,12 @@ header {
   right: 0;
 }
 
-.logo {
-  font-size: 18px;
-  font-weight: 700;
-  margin-right: auto;
-  white-space: nowrap;
+#hamburger-menu {
   cursor: pointer;
 }
 
-#hamburger-menu {
-  cursor: pointer;
+nav {
+  margin-left: auto;
 }
 
 nav > ul {
