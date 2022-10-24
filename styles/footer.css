@@ -7,8 +7,6 @@ form {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: url(images/contact-form-background.svg) no-repeat;
-  background-position: top 30px right;
   background-color: #6070ff;
   padding: 103px 24px 45px 24px;
   border-top-left-radius: 100px;

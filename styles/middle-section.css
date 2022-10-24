@@ -91,15 +91,6 @@
   padding-top: 25px;
 }
 
-/* .popup-buttons > .project-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 20px;
-} */
-
 .project-button > img {
   margin-left: 14px;
 }
@@ -122,7 +113,7 @@
 
 #about-me-section {
   background-color: white;
-  padding: 114px 24px;
+  padding: 80px 24px;
   border-top-right-radius: 100px;
 }
 
@@ -134,11 +125,13 @@
 .intro-about-me {
   font-size: 40px;
   line-height: 52px;
+  margin-bottom: 12px;
 }
 
 .description-about-me {
   font-size: 16px;
   line-height: 24px;
+  margin-bottom: 12px;
 }
 
 .resume-button {

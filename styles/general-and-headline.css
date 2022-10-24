@@ -71,18 +71,21 @@ nav > ul {
 }
 
 .intro {
-  font-size: 40px;
-  font-weight: 700;
+  font-size: 48px;
+  font-weight: 400;
   line-height: 52px;
   color: #172b4d;
   margin-bottom: 12px;
 }
 
+.intro span {
+  color: #6070ff;
+}
+
 .description {
-  font-size: 16px;
-  line-height: 24px;
-  color: #344563;
-  width: 80%;
+  color: #172b4d;
+  font-size: 48px;
+  line-height: 48px;
   margin-bottom: 12px;
 }
 
@@ -100,4 +103,62 @@ nav > ul {
 
 .social-media-icon {
   margin-right: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    display: initial;
+  }
+
+  header {
+    padding: 25px 155px;
+    justify-content: space-between;
+    right: 0;
+    left: 0;
+    width: auto;
+  }
+
+  .highlight {
+    color: #6070ff;
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
+
+  nav > ul > li {
+    color: #344563;
+  }
+
+  nav > ul {
+    display: flex;
+    justify-content: space-between;
+    width: 260px;
+  }
+
+  #headline-container {
+    padding: 225px 0 225px 10%;
+    border-bottom-left-radius: 150px;
+  }
+
+  #headline-section {
+    padding-top: 40px;
+    padding-bottom: 75px;
+    border-bottom-left-radius: 150px;
+  }
+
+  .intro {
+    font-size: 54px;
+    line-height: 60px;
+  }
+
+  .description {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 24px;
+  }
+
+  .intro > br:nth-child(2) {
+    display: none;
+  }
 }
