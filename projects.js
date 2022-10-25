@@ -1,30 +1,21 @@
 const projects = [
   {
-    img: 'images/img1.png',
-    name: 'Tip Calculator',
+    img: 'images/kanban.png',
+    name: 'Kanban Board',
     description:
-      'A simple calculator to calculate the tip between you and your friends on a night out',
-    languages: ['html', 'css', 'javascript'],
-    source: 'https://github.com/dodoburner/tip-calculator',
-    live: 'https://dodoburner.github.io/tip-calculator/',
+      'A kanban board is a tool that can be used to manage work at a personal or organizational level. It visually depicts work at various stages of a process using cards to represent work items and columns to represent each stage of the process.',
+    languages: ['react', 'redux'],
+    source: 'https://github.com/dodoburner/kanban-task-management-web-app',
+    live: 'https://kanban-task-management-app.netlify.app/',
   },
   {
     img: 'images/air-pollution-img.png',
     name: 'Air Pollution Data',
     description:
-      "This is a Single Page Application designed for mobile phones. It is created with React & Redux and uses 2 different API's to store a list of countries, cities and air pollution data for a given city. It has a search bar where you can directly look up for air pollution data of a city.",
-    languages: ['html', 'css', 'javascript', 'react', 'redux'],
+      "This is a Single Page Application designed for mobile phones. It uses 2 different API's. First to show a list of countries and cities, and second to show air pollution data for a given city.",
+    languages: ['react', 'redux'],
     source: 'https://github.com/dodoburner/City-Air-Pollution-Data',
     live: 'https://city-air-pollution-app.netlify.app/',
-  },
-  {
-    img: 'images/dl-img.png',
-    name: 'Dog Lovers Summit',
-    description:
-      ' A responsive website for a conference built with the mobile first approach. It has 2 pages; home and about.',
-    languages: ['html', 'css', 'javascript'],
-    source: 'https://github.com/dodoburner/DL-Global-Summit',
-    live: 'https://dodoburner.github.io/DL-Global-Summit/',
   },
   {
     img: 'images/tracker.png',
@@ -34,6 +25,24 @@ const projects = [
     languages: ['html', 'css', 'javascript'],
     source: 'https://github.com/dodoburner/IP-Adress-Tracker',
     live: 'https://dodoburner.github.io/IP-Adress-Tracker/',
+  },
+  {
+    img: 'images/img1.png',
+    name: 'Tip Calculator',
+    description:
+      'A simple calculator to calculate the tip between you and your friends on a night out',
+    languages: ['html', 'css', 'javascript'],
+    source: 'https://github.com/dodoburner/tip-calculator',
+    live: 'https://dodoburner.github.io/tip-calculator/',
+  },
+  {
+    img: 'images/dl-img.png',
+    name: 'Dog Lovers Summit',
+    description:
+      ' A responsive website for a conference built with the mobile first approach. It has 2 pages; home and about.',
+    languages: ['html', 'css', 'javascript'],
+    source: 'https://github.com/dodoburner/DL-Global-Summit',
+    live: 'https://dodoburner.github.io/DL-Global-Summit/',
   },
 ];
 

@@ -74,11 +74,11 @@ nav > ul {
 #headline-container {
   padding: 100px 100px 225px 24px;
   border-bottom-left-radius: 100px;
+  font-weight: bold;
 }
 
 .intro {
   font-size: 34px;
-  font-weight: 400;
   line-height: 34px;
   color: #172b4d;
   margin-bottom: 12px;
@@ -111,6 +111,12 @@ nav > ul {
   margin-right: 20px;
 }
 
+@media only screen and (min-width: 550px) {
+  #headline-section {
+    background-size: 500px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   body {
     display: initial;
@@ -118,10 +124,14 @@ nav > ul {
 
   header {
     padding: 25px 155px;
-    justify-content: space-between;
     right: 0;
     left: 0;
     width: auto;
+    justify-content: center;
+  }
+
+  nav {
+    margin-left: 0;
   }
 
   .highlight {
@@ -153,14 +163,13 @@ nav > ul {
     background-size: 600px;
   }
 
-  .intro {
+  .intro,
+  .description {
     font-size: 54px;
-    line-height: 60px;
+    line-height: 50px;
   }
 
   .description {
-    font-size: 60px;
-    line-height: 60px;
     margin-bottom: 24px;
   }
 

@@ -220,6 +220,16 @@
   margin-bottom: 20px;
 }
 
+@media only screen and (min-width: 550px) {
+  #work-section {
+    padding: 114px 48px;
+  }
+
+  .project-img {
+    height: 325px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   #work-section {
     display: grid;
@@ -227,6 +237,10 @@
     grid-auto-columns: 1fr;
     gap: 24px;
     padding: 8%;
+  }
+
+  .project-img {
+    height: 225px;
   }
 
   .project-text {
@@ -261,5 +275,11 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .see-more-btn {
+    display: none;
   }
 }
