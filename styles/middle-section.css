@@ -8,9 +8,9 @@
 }
 
 #work-section {
-  display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
   padding: 114px 24px;
   position: relative;
 }
@@ -70,6 +70,7 @@
 
 .project-languages {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 75px;
 }
@@ -231,10 +232,6 @@
   .project-text {
     font-size: 16px;
     margin-bottom: 20px;
-  }
-
-  .project-languages {
-    flex-wrap: wrap;
   }
 
   #about-me-section {

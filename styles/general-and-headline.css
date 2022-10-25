@@ -6,6 +6,10 @@ body {
   margin: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -61,17 +65,21 @@ nav > ul {
 #headline-section {
   background-color: white;
   border-bottom-left-radius: 100px;
+  background-image: url(../images/profilna2-removebg.png);
+  background-position: right -100px bottom;
+  background-size: 350px;
+  background-repeat: no-repeat;
 }
 
 #headline-container {
-  padding: 114px 24px 144px;
+  padding: 100px 100px 225px 24px;
   border-bottom-left-radius: 100px;
 }
 
 .intro {
-  font-size: 48px;
+  font-size: 34px;
   font-weight: 400;
-  line-height: 52px;
+  line-height: 34px;
   color: #172b4d;
   margin-bottom: 12px;
 }
@@ -82,8 +90,8 @@ nav > ul {
 
 .description {
   color: #172b4d;
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 34px;
+  line-height: 34px;
   margin-bottom: 12px;
 }
 
@@ -135,14 +143,14 @@ nav > ul {
   }
 
   #headline-container {
-    padding: 225px 0 225px 10%;
+    padding: 225px 225px 225px 114px;
     border-bottom-left-radius: 150px;
   }
 
   #headline-section {
-    padding-top: 40px;
     padding-bottom: 75px;
     border-bottom-left-radius: 150px;
+    background-size: 600px;
   }
 
   .intro {
@@ -158,5 +166,13 @@ nav > ul {
 
   .intro > br:nth-child(2) {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #headline-section {
+    border-bottom-left-radius: 150px;
+    background-size: 700px;
+    background-position: bottom right;
   }
 }
