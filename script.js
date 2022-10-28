@@ -55,11 +55,14 @@ window.addEventListener('scroll', () => {
   }
 });
 
+const knowdledgeContainer = document.querySelectorAll('.knowledge-type-container');
 const arrowImages = document.querySelectorAll('.arrow-img');
 const resumeContents = document.querySelectorAll('.resume-list-content');
 
-arrowImages.forEach((img, index) => img.addEventListener('click', () => {
+knowdledgeContainer.forEach((container, index) => container.addEventListener('click', () => {
   const resumeContent = resumeContents[index];
+  const img = arrowImages[index];
+
   resumeContent.classList.toggle('display-none');
   if (img.src.includes('right')) {
     img.src = 'images/icon-down.png';

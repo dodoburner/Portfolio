@@ -1,66 +1,74 @@
 const projects = [
   {
-    img: 'images/desktop-images/img1.png',
+    img: 'images/kanban.png',
+    name: 'Kanban Board',
+    description:
+      'A kanban board is a tool that can be used to manage work at a personal or organizational level. It visually depicts work at various stages of a process using cards to represent work items and columns to represent each stage of the process.',
+    languages: ['react', 'redux', 'html', 'css', 'javascript'],
+    source: 'https://github.com/dodoburner/kanban-task-management-web-app',
+    live: 'https://kanban-task-management-app.netlify.app/',
+  },
+  {
+    img: 'images/air-pollution-img.png',
+    name: 'Air Pollution Data',
+    description:
+      "This is a Single Page Application designed for mobile phones. It uses 2 different API's. First to show a list of countries and cities, and second to show air pollution data for a given city.",
+    languages: ['react', 'redux', 'html', 'css', 'javascript'],
+    source: 'https://github.com/dodoburner/City-Air-Pollution-Data',
+    live: 'https://city-air-pollution-app.netlify.app/',
+  },
+  {
+    img: 'images/tracker.png',
+    name: 'IP Adress Tracker',
+    description:
+      "Web App that shows  info about the user's public IP address and displays the location on a map. The user can search for info about other IP adresses using the search bar.",
+    languages: ['html', 'css', 'javascript'],
+    source: 'https://github.com/dodoburner/IP-Adress-Tracker',
+    live: 'https://dodoburner.github.io/IP-Adress-Tracker/',
+  },
+  {
+    img: 'images/img1.png',
     name: 'Tip Calculator',
-    jobDescription: {
-      company: 'Frontend Mentor',
-      role: 'Student',
-      year: '2022',
-    },
-    description: 'A simple calculator to calculate the tip between you and your friends on a night out',
+    description:
+      'A simple calculator to calculate the tip between you and your friends on a night out',
     languages: ['html', 'css', 'javascript'],
     source: 'https://github.com/dodoburner/tip-calculator',
     live: 'https://dodoburner.github.io/tip-calculator/',
   },
   {
-    img: 'images/air-pollution-img.png',
-    name: 'Air Pollution Data',
-    jobDescription: {
-      company: 'Microverse',
-      role: 'Student',
-      year: '2022',
-    },
-    description: 'This is a Single Page Application designed for mobile phones. It is created with React & Redux and uses 2 different API\'s to store a list of countries, cities and air pollution data for a given city. It has a search bar where you can directly look up for air pollution data of a city.',
-    languages: ['html', 'css', 'javascript', 'react', 'redux'],
-    source: 'https://github.com/dodoburner/City-Air-Pollution-Data',
-    live: 'https://city-air-pollution-app.netlify.app/',
-  },
-  {
     img: 'images/dl-img.png',
     name: 'Dog Lovers Summit',
-    jobDescription: {
-      company: 'Microverse',
-      role: 'Student',
-      year: '2022',
-    },
-    description: ' A responsive website for a conference built with the mobile first approach. It has 2 pages; home and about.',
+    description:
+      ' A responsive website for a conference built with the mobile first approach. It has 2 pages; home and about.',
     languages: ['html', 'css', 'javascript'],
     source: 'https://github.com/dodoburner/DL-Global-Summit',
     live: 'https://dodoburner.github.io/DL-Global-Summit/',
   },
   {
-    img: 'images/tracker.png',
-    name: 'IP Adress Tracker',
-    jobDescription: {
-      company: 'Frontend Mentor',
-      role: 'Student',
-      year: '2022',
-    },
-    description: 'Web App that shows  info about the user\'s public IP address and displays the location on a map. The user can search for info about other IP adresses using the search bar.',
-    languages: ['html', 'css', 'javascript'],
-    source: 'https://github.com/dodoburner/IP-Adress-Tracker',
-    live: 'https://dodoburner.github.io/IP-Adress-Tracker/',
+    img: 'images/mm.png',
+    name: 'Math Magicians',
+    description:
+      'This is a single page app built with React that has 3 sections; Home, Calculator, and Quotes. The home page welcomes the user, the calculator calculates, and the quotes page displays a math quote from an API.',
+    languages: ['react', 'html', 'css', 'javascript'],
+    source: 'https://github.com/dodoburner/math-magicians',
+    live: 'https://math-magicians-mm.netlify.app/',
   },
 ];
 
 const workSection = document.createElement('section');
 workSection.id = 'work-section';
+workSection.innerHTML = `
+  <button class="see-more-btn">
+  See More
+  <img class="arrow-img" src="images/icon-down.png" alt="">
+  </button>
+`;
 const mainSection = document.querySelector('main');
 mainSection.insertBefore(workSection, mainSection.children[1]);
 
 projects.forEach((project, index) => {
   const projectHTML = document.createElement('div');
-  projectHTML.innerHTML = (`
+  projectHTML.innerHTML = `
     <img class="project-img" src=${project.img}>
     <img class="project-img-desktop img${index + 1}" src=${project.img}>
     
@@ -69,20 +77,6 @@ projects.forEach((project, index) => {
         ${project.name}
       </h3>
 
-      <div class="project-info-top">
-        <p class="job-place">
-          ${project.jobDescription.company}
-        </p>
-        <img class="circle" src="images/Counter.svg" alt="">
-        <p class="job-title gray">
-          ${project.jobDescription.role}
-        </p>
-        <img class="circle" src="images/Counter.svg" alt="">
-        <p class="project-year gray">
-          ${project.jobDescription.year}
-        </p>
-      </div>
-
       <p class="project-text">
         ${project.description}
       </p>
@@ -90,11 +84,22 @@ projects.forEach((project, index) => {
       <ul class="project-languages">
       </ul>
 
-      <button type="button" class="project-button">
-        See Project
-      </button>
+      <div class="project-buttons">
+        <button type="button" class="project-button">
+        <a href="${project.live}" target="_blank">
+          See live
+          <img src="images/popup-images/Icon-Export.svg" alt="">
+        </a> 
+        </button>
+        <button type="button" class="project-button">
+          <a href="${project.source}" target="_blank">
+            See Source
+            <img src="images/popup-images/Icon -GitHub.svg" alt="">
+          </a>
+        </button>
+      </div>
     </div>
-  `);
+  `;
   projectHTML.className = 'project-section';
   workSection.appendChild(projectHTML);
   const ul = document.querySelectorAll('.project-languages')[index];
@@ -106,112 +111,34 @@ projects.forEach((project, index) => {
   });
 });
 
-function createPopup(position) {
-  const popup = document.createElement('div');
-  popup.innerHTML = (`
-    <div class="popup-content">
-        <h3 class="project-title">
-           ${projects[position].name}
-        </h3>
+const projectContainers = document.querySelectorAll('.project-section');
+const seeMoreBtn = document.querySelector('.see-more-btn');
+let open = false;
+seeMoreBtn.addEventListener('click', () => {
+  open = !open;
+  seeMoreBtn.innerHTML = open
+    ? 'See Less <img class="arrow-img" src="images/icon-up.png" alt="">'
+    : 'See More <img class="arrow-img" src="images/icon-down.png" alt="">';
 
-        <img class="icon-cancel" src="images/popup-images/Icon-Cancel-Gray.svg" alt="">
-        <img class="popup-project-img" src=${projects[position].img} alt="">
-
-        <ul class="project-info-top">
-          <li class="job-place">${projects[position].jobDescription.company}</li>
-          <img class="circle" src="images/Counter.svg" alt="">
-          <li class="job-title gray">${projects[position].jobDescription.role}</li>
-          <img class="circle" src="images/Counter.svg" alt="">
-          <li class="project-year gray">${projects[position].jobDescription.year}</li>
-        </ul>
-
-        <img class="project-img-desktop-popup"  src=${projects[position].desktopImage} alt="">
-
-        <div class="popup-bottom">
-          <p class="project-text">
-            ${projects[position].description}
-          </p>
-
-          <div class="badges-buttons">
-            <ul class="popup-project-languages">
-            </ul>
-  
-            <div class="popup-buttons">
-              <button type="button" class="project-button">
-              <a href="${projects[position].live}">
-                See live
-                <img src="images/popup-images/Icon-Export.svg" alt="">
-              </a> 
-              </button>
-              <button type="button" class="project-button">
-                <a href="${projects[position].source}">
-                  See Source
-                  <img src="images/popup-images/Icon -GitHub.svg" alt="">
-                </a>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="projects-navigation-buttons">
-            <button type="button" class="previous">
-              previous project
-            </button>
-            <button type="button" class="next">
-              next project
-            </button>
-          </div>  
-      </div>
-  `);
-  popup.classList.add('popup');
-  workSection.appendChild(popup);
-  document.body.classList.add('not-scrollable');
-  const ul = document.querySelector('.popup-project-languages');
-  projects[position].languages.forEach((language) => {
-    const li = document.createElement('li');
-    li.classList.add('language');
-    li.innerHTML = `${language}`;
-    ul.appendChild(li);
+  projectContainers.forEach((project, index) => {
+    if (open) {
+      project.style.display = 'block';
+    } else if (index >= 3) {
+      project.style.display = 'none';
+    }
   });
-}
+});
 
-const projectButton = document.querySelectorAll('.project-info .project-button');
-let position = 0;
-
-function popupClose() {
-  const popup = document.querySelector('.popup');
-  document.querySelector('.icon-cancel').addEventListener('click', () => {
-    workSection.removeChild(popup);
-    document.body.classList.toggle('not-scrollable');
-  });
-}
-
-function popupNavigation() {
-  const popupNavButton = document.querySelectorAll('.projects-navigation-buttons button');
-  popupNavButton.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const popup = document.querySelector('.popup');
-      if (btn.classList.contains('previous') && position !== 0) {
-        workSection.removeChild(popup);
-        createPopup(position - 1);
-        position -= 1;
-        popupNavigation();
-        popupClose();
-      } else if (btn.classList.contains('next') && position !== 3) {
-        workSection.removeChild(popup);
-        createPopup(position + 1);
-        position += 1;
-        popupNavigation();
-        popupClose();
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 768) {
+    projectContainers.forEach((project) => {
+      project.style.display = 'block';
+    });
+  } else {
+    projectContainers.forEach((project, index) => {
+      if (index >= 3) {
+        project.style.display = 'none';
       }
     });
-  });
-}
-
-projectButton.forEach((btn, index) => {
-  btn.addEventListener('click', () => {
-    position = index;
-    createPopup(index);
-    popupClose();
-    popupNavigation();
-  });
+  }
 });

@@ -7,10 +7,8 @@ form {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: url(images/contact-form-background.svg) no-repeat;
-  background-position: top 30px right;
   background-color: #6070ff;
-  padding: 103px 24px 45px 24px;
+  padding: 45px;
   border-top-left-radius: 100px;
   box-sizing: border-box;
 }
@@ -29,7 +27,7 @@ form > p {
   font-size: 16px;
   line-height: 28px;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 input {
