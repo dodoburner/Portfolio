@@ -247,10 +247,6 @@
     display: block;
   }
 
-  .project-section:nth-last-child(-n + 2) {
-    display: none;
-  }
-
   .project-img {
     height: 225px;
   }
@@ -288,14 +284,8 @@
     align-items: flex-start;
     gap: 16px;
   }
-}
 
-@media only screen and (min-width: 1200px) {
   .see-more-btn {
     display: none;
-  }
-
-  .project-section:nth-child(-n + 7) {
-    display: block;
   }
 }

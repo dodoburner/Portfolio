@@ -59,7 +59,7 @@ const workSection = document.createElement('section');
 workSection.id = 'work-section';
 workSection.innerHTML = `
   <button class="see-more-btn">
-  SEE MORE
+  See More
   <img class="arrow-img" src="images/icon-down.png" alt="">
   </button>
 `;
@@ -109,4 +109,36 @@ projects.forEach((project, index) => {
     li.innerHTML = `${language}`;
     ul.appendChild(li);
   });
+});
+
+const projectContainers = document.querySelectorAll('.project-section');
+const seeMoreBtn = document.querySelector('.see-more-btn');
+let open = false;
+seeMoreBtn.addEventListener('click', () => {
+  open = !open;
+  seeMoreBtn.innerHTML = open
+    ? 'See Less <img class="arrow-img" src="images/icon-up.png" alt="">'
+    : 'See More <img class="arrow-img" src="images/icon-down.png" alt="">';
+
+  projectContainers.forEach((project, index) => {
+    if (open) {
+      project.style.display = 'block';
+    } else if (index >= 3) {
+      project.style.display = 'none';
+    }
+  });
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 768) {
+    projectContainers.forEach((project) => {
+      project.style.display = 'block';
+    });
+  } else {
+    projectContainers.forEach((project, index) => {
+      if (index >= 3) {
+        project.style.display = 'none';
+      }
+    });
+  }
 });
