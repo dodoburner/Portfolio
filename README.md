@@ -7,9 +7,9 @@ This is my Microverse personal portfolio project. Through this project I will de
 - Major languages: HTML, CSS, JavaScript
 - Technologies used: GitHub Actions
 
-## Deployment
+## Live
 
-To run this project in your local environment, you can use this [link](https://dodoburner.github.io/Portfolio/)
+ - [link](https://dodoburner.github.io/Portfolio/)
 
 ## Authors
 
