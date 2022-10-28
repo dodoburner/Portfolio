@@ -4,7 +4,7 @@ const projects = [
     name: 'Kanban Board',
     description:
       'A kanban board is a tool that can be used to manage work at a personal or organizational level. It visually depicts work at various stages of a process using cards to represent work items and columns to represent each stage of the process.',
-    languages: ['react', 'redux'],
+    languages: ['react', 'redux', 'html', 'css', 'javascript'],
     source: 'https://github.com/dodoburner/kanban-task-management-web-app',
     live: 'https://kanban-task-management-app.netlify.app/',
   },
@@ -13,7 +13,7 @@ const projects = [
     name: 'Air Pollution Data',
     description:
       "This is a Single Page Application designed for mobile phones. It uses 2 different API's. First to show a list of countries and cities, and second to show air pollution data for a given city.",
-    languages: ['react', 'redux'],
+    languages: ['react', 'redux', 'html', 'css', 'javascript'],
     source: 'https://github.com/dodoburner/City-Air-Pollution-Data',
     live: 'https://city-air-pollution-app.netlify.app/',
   },
@@ -43,6 +43,15 @@ const projects = [
     languages: ['html', 'css', 'javascript'],
     source: 'https://github.com/dodoburner/DL-Global-Summit',
     live: 'https://dodoburner.github.io/DL-Global-Summit/',
+  },
+  {
+    img: 'images/mm.png',
+    name: 'Math Magicians',
+    description:
+      'This is a single page app built with React that has 3 sections; Home, Calculator, and Quotes. The home page welcomes the user, the calculator calculates, and the quotes page displays a math quote from an API.',
+    languages: ['react', 'html', 'css', 'javascript'],
+    source: 'https://github.com/dodoburner/math-magicians',
+    live: 'https://math-magicians-mm.netlify.app/',
   },
 ];
 
