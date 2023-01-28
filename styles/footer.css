@@ -3,13 +3,13 @@ footer {
 }
 
 form {
+  background-color: #6070ff;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #6070ff;
   padding: 45px;
-  border-top-left-radius: 100px;
+  border-top-left-radius: 150px;
   box-sizing: border-box;
 }
 

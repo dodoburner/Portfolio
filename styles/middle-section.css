@@ -262,6 +262,10 @@
     border-top-right-radius: 150px;
   }
 
+  #about-me-section .connect {
+    color: black;
+  }
+
   #my-knowledge {
     width: 100%;
   }

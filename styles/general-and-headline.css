@@ -63,7 +63,6 @@ nav > ul {
 }
 
 #headline-section {
-  background-color: white;
   border-bottom-left-radius: 100px;
   background-image: url(../images/profilna2-removebg.png);
   background-position: right -100px bottom;
@@ -71,32 +70,38 @@ nav > ul {
   background-repeat: no-repeat;
 }
 
+#overlay {
+  background: linear-gradient(90deg, rgba(96, 112, 255, 1) 0%, rgba(255, 255, 255, 1) 80%);
+  border-bottom-left-radius: 150px;
+}
+
 #headline-container {
   padding: 100px 100px 225px 24px;
-  border-bottom-left-radius: 100px;
   font-weight: bold;
 }
 
-.intro,
+.intro {
+  font-size: 18px;
+  color: white;
+}
+
 .description {
   font-size: 34px;
   line-height: 42px;
-  color: #172b4d;
-}
-
-.intro span {
-  color: #6070ff;
-}
-
-.description {
+  color: white;
   margin-bottom: 12px;
 }
 
+.intro span {
+  font-size: 34px;
+  color: #ffef60;
+}
+
 .connect {
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 17px;
   line-height: 24px;
-  color: #7f8cff;
+  color: #ffef60;
   margin-bottom: 12px;
 }
 
@@ -151,22 +156,25 @@ nav > ul {
 
   #headline-container {
     padding: 225px 225px 225px 114px;
-    border-bottom-left-radius: 150px;
   }
 
   #headline-section {
     padding-bottom: 75px;
-    border-bottom-left-radius: 150px;
     background-size: 600px;
   }
 
-  .intro,
-  .description {
-    font-size: 54px;
-    line-height: 50px;
+  .intro {
+    font-size: 34px;
+    line-height: 60px;
+  }
+
+  .intro span {
+    font-size: 70px;
   }
 
   .description {
+    font-size: 70px;
+    line-height: 70px;
     margin-bottom: 24px;
   }
 
@@ -177,7 +185,6 @@ nav > ul {
 
 @media only screen and (min-width: 1200px) {
   #headline-section {
-    border-bottom-left-radius: 150px;
     background-size: 700px;
     background-position: bottom right;
   }
