@@ -18,16 +18,16 @@ form > h2 {
   font-weight: 700;
   line-height: 52px;
   text-align: center;
-  color: white;
   margin-bottom: 12px;
+  color: #ffef60;
 }
 
 form > p {
-  color: #ebebff;
   font-size: 16px;
   line-height: 28px;
   text-align: center;
   margin-bottom: 40px;
+  color: white;
 }
 
 input {

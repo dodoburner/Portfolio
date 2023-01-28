@@ -71,7 +71,7 @@ nav > ul {
 }
 
 #overlay {
-  background: linear-gradient(90deg, rgba(96, 112, 255, 1) 0%, rgba(255, 255, 255, 1) 80%);
+  background: linear-gradient(90deg, rgba(96, 112, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
   border-bottom-left-radius: 150px;
 }
 
@@ -82,19 +82,27 @@ nav > ul {
 
 .intro {
   font-size: 18px;
-  color: white;
 }
 
 .description {
   font-size: 34px;
   line-height: 42px;
-  color: white;
   margin-bottom: 12px;
+}
+
+.intro,
+.description {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 239, 96, 1) 30%);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .intro span {
   font-size: 34px;
-  color: #ffef60;
 }
 
 .connect {

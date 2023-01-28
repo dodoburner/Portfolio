@@ -260,10 +260,11 @@
     padding: 8%;
     display: flex;
     border-top-right-radius: 150px;
+    color: #344563;
   }
 
   #about-me-section .connect {
-    color: black;
+    color: #344563;
   }
 
   #my-knowledge {
