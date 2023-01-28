@@ -1,163 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dorian's Portfolio</title>
-  <link rel="stylesheet" href="./styles/general-and-headline.css">
-  <link rel="stylesheet" href="./styles/middle-section.css">
-  <link rel="stylesheet" href="./styles/footer.css">
-  <link rel="stylesheet" href="./styles/mobile-menu.css">
-  <link rel="stylesheet" href="./styles/desktop.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script src="script.js" defer></script>
-  <script src="projects.js" defer></script>
-  <script src="form.js" defer></script>
-</head>
-<body>
-  <section id="mobile-menu" class="display-none">
-    <img id="menu-close" src="images/Icon-Cancel.svg" alt="button for closing the mobile menu">
-    <ul>
-      <li class="menu-link"><a href="#work-section">Portfolio</a></li>
-      <li class="menu-link"><a href="#about-me-section">About</a></li>
-      <li class="menu-link"><a href="#contact-section">Contact</a></li>
-    </ul>
-  </section>
- 
-  <header>
-    <nav id="navigation-menu">
-      <img id="hamburger-menu" src="images/Union.png" alt="navigation menu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dorian's Portfolio</title>
+    <link rel="stylesheet" href="./styles/general-and-headline.css" />
+    <link rel="stylesheet" href="./styles/middle-section.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/mobile-menu.css" />
+    <link rel="stylesheet" href="./styles/desktop.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <script src="projects.js" defer></script>
+    <script src="form.js" defer></script>
+  </head>
+  <body>
+    <section id="mobile-menu" class="display-none">
+      <img
+        id="menu-close"
+        src="images/Icon-Cancel.svg"
+        alt="button for closing the mobile menu"
+      />
       <ul>
-        <li class="nav-link"><a href="#work-section">Portfolio</a></li>
-        <li class="nav-link"><a href="#about-me-section">About</a></li>
-        <li class="nav-link"><a href="#contact-section">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section id="headline-section">
-      <div id="headline-container">
-        <h1 class="intro">
-          Hi, my name is <span>Dorian</span>
-        </h1>
-    
-        <p class="description">
-            I'm a web developer
-        </p>
-    
-        <p class="connect">
-          LET'S CONNECT
-        </p>
-    
-        <ul class="social-icons"> 
-          <li><a class="social-media-icon" href="https://twitter.com/DorianUrem" target=”_blank”><img src="images/social-icons/Vector.svg" alt="twitter link"></a></li>
-          <li><a class="social-media-icon" href="https://www.linkedin.com/in/dorian-urem/" target=”_blank”><img src="images/social-icons/Linkedinicon.svg" alt="linked-in link"></a></li>
-          <li><a class="social-media-icon" href="https://medium.com/@uremdorian" target=”_blank”><img src="images/social-icons/Vector(2).svg" alt="medium link"></a></li>
-          <li><a class="social-media-icon" href="https://github.com/dodoburner" target=”_blank”><img src="images/social-icons/Vector(1).svg" alt="github link"></a></li>
-          <li><a class="social-media-icon" href="https://angel.co/u/dorian-urem" target=”_blank”><img src="images/social-icons/Vector(3).svg" alt="angellist link"></a></li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="about-me-section">
-      <div id="my-info">
-        <h2 class="intro-about-me">
-          About <br> myself
-        </h2>
-    
-        <p class="description-about-me">
-          Hello, I’m a software developer! I can help you build a product, feature, or website. Look through some of my work and experience! If you like what you see and have a project you need to be coded, don’t hesitate to contact me.
-        </p>
-    
-        <p class="connect">
-          LET'S CONNECT
-        </p>
-    
-        <ul class="social-icons"> 
-          <li><a class="social-media-icon" href="https://twitter.com/DorianUrem" target=”_blank”><img src="images/social-icons/Vector.svg" alt="twitter link"></a></li>
-          <li><a class="social-media-icon" href="https://www.linkedin.com/in/dorian-urem/" target=”_blank”><img src="images/social-icons/Linkedinicon.svg" alt="linked-in link"></a></li>
-          <li><a class="social-media-icon" href="https://medium.com/@uremdorian" target=”_blank”><img src="images/social-icons/Vector(2).svg" alt="medium link"></a></li>
-          <li><a class="social-media-icon" href="https://github.com/dodoburner" target=”_blank”><img src="images/social-icons/Vector(1).svg" alt="github link"></a></li>
-          <li><a class="social-media-icon" href="https://angel.co/u/dorian-urem" target=”_blank”><img src="images/social-icons/Vector(3).svg" alt="angellist link"></a></li>
-        </ul>
-  
-        <button type="button" class="project-button resume-button">
-          Get my resume
-        </button>
-      </div>
-
-      <ul id="my-knowledge">
-        <li class="resume-list resume-languages">
-          <div class="knowledge-type-container">
-            <p>
-              Languages
-             </p>
-             <img class="arrow-img" src="images/icon-right.png" alt="">
-          </div>
-          <ul class="resume-list-content display-none">
-            <li class="resume-list-item"><img class="resume-item-img" src="images/js-logo.png" alt="javascript logo">JavaScript</li>
-            <li class="resume-list-item"><img class="resume-item-img" src="images/html-logo.png" alt="html logo">HTML</li>
-            <li class="resume-list-item"><img class="resume-item-img" src="images/css-logo.png" alt="css logo">CSS</li>
-            <li class="resume-list-item"><img class="resume-item-img" src="images/ruby-logo.png" alt="css logo">Ruby</li>
-            <li class="resume-list-item"><img class="resume-item-img"src="images/psql-logo.png" alt="sql logo">PostgreSQL</li>
-          </ul>
-        </li>
-
-        <li class="resume-list resume-frameworks">
-          <div class="knowledge-type-container">
-            <p>
-              Frameworks & Libraries
-            </p>
-            <img class="arrow-img" src="images/icon-right.png" alt="">
-          </div>
-          <ul class="resume-list-content display-none">
-            <li class="resume-list-item"><img class="resume-item-img" src="images/react-logo.png" alt="react logo">React</li>
-            <li class="resume-list-item"><img class="resume-item-img" src="images/redux-logo.png" alt="redux logo">Redux</li>
-          </ul>
-        </li>
-
-        <li class="resume-list resume-skills">
-          <div class="knowledge-type-container">
-            <p>
-              Skills
-            </p>
-            <img class="arrow-img" src="images/icon-right.png" alt="">
-          </div>
-          <ul class="resume-list-content display-none">
-            <li class="resume-list-item">Git & GitHub</li>
-            <li class="resume-list-item">Mobile / Responsive Development</li>
-            <li class="resume-list-item">TDD</li>
-            <li class="resume-list-item">Chrome DevTools</li>
-          </ul>
-        </li>
+        <li class="menu-link"><a href="#work-section">Portfolio</a></li>
+        <li class="menu-link"><a href="#about-me-section">About</a></li>
+        <li class="menu-link"><a href="#contact-section">Contact</a></li>
       </ul>
     </section>
-  </main>
 
-  <footer id="contact-section">
-    <form id = "form" action="https://formspree.io/f/xvolldvz" method="post">
-      <h2>
-        Contact me
-      </h2>
+    <header>
+      <nav id="navigation-menu">
+        <img id="hamburger-menu" src="images/Union.png" alt="navigation menu" />
+        <ul>
+          <li class="nav-link"><a href="#work-section">Portfolio</a></li>
+          <li class="nav-link"><a href="#about-me-section">About</a></li>
+          <li class="nav-link"><a href="#contact-section">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <p>
-        If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it!
-      </p>
-      
-      <input id="name" name="name" type="text" maxlength="30" placeholder="name" required>
-      <input id="email" name="email" type="email" placeholder="email" required>
-      <textarea name="message" id="message" maxlength="500" placeholder="Write your message here" required></textarea>
-        
-      <div id="button-wrapper">
-        <button type="submit" class="project-button form-button" >
-          Get In Touch
-        </button>
+    <main>
+      <div id="overlay">
+        <section id="headline-section">
+          <div id="headline-container">
+            <h1 class="intro">My name is <span>Dorian</span></h1>
+
+            <p class="description">I'm a web developer</p>
+
+            <p class="connect">LET'S CONNECT</p>
+
+            <ul class="social-icons">
+              <li>
+                <a
+                  class="social-media-icon"
+                  href="https://twitter.com/DorianUrem"
+                  target="”_blank”"
+                  ><img src="images/social-icons/Vector.svg" alt="twitter link"
+                /></a>
+              </li>
+              <li>
+                <a
+                  class="social-media-icon"
+                  href="https://www.linkedin.com/in/dorian-urem/"
+                  target="”_blank”"
+                  ><img
+                    src="images/social-icons/Linkedinicon.svg"
+                    alt="linked-in link"
+                /></a>
+              </li>
+              <li>
+                <a
+                  class="social-media-icon"
+                  href="https://medium.com/@uremdorian"
+                  target="”_blank”"
+                  ><img
+                    src="images/social-icons/Vector(2).svg"
+                    alt="medium link"
+                /></a>
+              </li>
+              <li>
+                <a
+                  class="social-media-icon"
+                  href="https://github.com/dodoburner"
+                  target="”_blank”"
+                  ><img
+                    src="images/social-icons/Vector(1).svg"
+                    alt="github link"
+                /></a>
+              </li>
+              <li>
+                <a
+                  class="social-media-icon"
+                  href="https://angel.co/u/dorian-urem"
+                  target="”_blank”"
+                  ><img
+                    src="images/social-icons/Vector(3).svg"
+                    alt="angellist link"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </section>
       </div>
-    </form>
-  </footer>
-</body>
+
+      <section id="about-me-section">
+        <div id="my-info">
+          <h2 class="intro-about-me">
+            About <br />
+            myself
+          </h2>
+
+          <p class="description-about-me">
+            Hello, I’m a software developer! I can help you build a product,
+            feature, or website. Look through some of my work and experience! If
+            you like what you see and have a project you need to be coded, don’t
+            hesitate to contact me.
+          </p>
+
+          <p class="connect">LET'S CONNECT</p>
+
+          <ul class="social-icons">
+            <li>
+              <a
+                class="social-media-icon"
+                href="https://twitter.com/DorianUrem"
+                target="”_blank”"
+                ><img src="images/social-icons/gray/Vector.svg" alt="twitter link"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="social-media-icon"
+                href="https://www.linkedin.com/in/dorian-urem/"
+                target="”_blank”"
+                ><img
+                  src="images/social-icons/gray/Linkedinicon.svg"
+                  alt="linked-in link"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="social-media-icon"
+                href="https://medium.com/@uremdorian"
+                target="”_blank”"
+                ><img src="images/social-icons/gray/Vector(2).svg" alt="medium link"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="social-media-icon"
+                href="https://github.com/dodoburner"
+                target="”_blank”"
+                ><img src="images/social-icons/gray/Vector(1).svg" alt="github link"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="social-media-icon"
+                href="https://angel.co/u/dorian-urem"
+                target="”_blank”"
+                ><img
+                  src="images/social-icons/gray/Vector(3).svg"
+                  alt="angellist link"
+              /></a>
+            </li>
+          </ul>
+
+          <button type="button" class="project-button resume-button">
+            Get my resume
+          </button>
+        </div>
+
+        <ul id="my-knowledge">
+          <li class="resume-list resume-languages">
+            <div class="knowledge-type-container">
+              <p>Languages</p>
+              <img class="arrow-img" src="images/icon-right.png" alt="" />
+            </div>
+            <ul class="resume-list-content display-none">
+              <li class="resume-list-item">
+                <img
+                  class="resume-item-img"
+                  src="images/js-logo.png"
+                  alt="javascript logo"
+                />JavaScript
+              </li>
+              <li class="resume-list-item">
+                <img
+                  class="resume-item-img"
+                  src="images/html-logo.png"
+                  alt="html logo"
+                />HTML
+              </li>
+              <li class="resume-list-item">
+                <img
+                  class="resume-item-img"
+                  src="images/css-logo.png"
+                  alt="css logo"
+                />CSS
+              </li>
+              <li class="resume-list-item">
+                <img
+                  class="resume-item-img"
+                  src="images/ruby-logo.png"
+                  alt="css logo"
+                />Ruby
+              </li>
+              <li class="resume-list-item">
+                <img
+                  class="resume-item-img"
+                  src="images/psql-logo.png"
+                  alt="sql logo"
+                />PostgreSQL
+              </li>
+            </ul>
+          </li>
+
+          <li class="resume-list resume-frameworks">
+            <div class="knowledge-type-container">
+              <p>Frameworks & Libraries</p>
+              <img class="arrow-img" src="images/icon-right.png" alt="" />
+            </div>
+            <ul class="resume-list-content display-none">
+              <li class="resume-list-item">
+                <img
+                  class="resume-item-img"
+                  src="images/react-logo.png"
+                  alt="react logo"
+                />React
+              </li>
+              <li class="resume-list-item">
+                <img
+                  class="resume-item-img"
+                  src="images/redux-logo.png"
+                  alt="redux logo"
+                />Redux
+              </li>
+              <li class="resume-list-item">
+                <img
+                  class="resume-item-img"
+                  src="images/rails-logo.png"
+                  alt="rails logo"
+                />Ruby on Rails
+              </li>
+            </ul>
+          </li>
+
+          <li class="resume-list resume-skills">
+            <div class="knowledge-type-container">
+              <p>Skills</p>
+              <img class="arrow-img" src="images/icon-right.png" alt="" />
+            </div>
+            <ul class="resume-list-content display-none">
+              <li class="resume-list-item">Git & GitHub</li>
+              <li class="resume-list-item">Mobile / Responsive Development</li>
+              <li class="resume-list-item">TDD</li>
+              <li class="resume-list-item">Chrome DevTools</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer id="contact-section">
+      <form id="form" action="https://formspree.io/f/xvolldvz" method="post">
+        <h2>Contact me</h2>
+
+        <p>
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it!
+        </p>
+
+        <input
+          id="name"
+          name="name"
+          type="text"
+          maxlength="30"
+          placeholder="name"
+          required
+        />
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="email"
+          required
+        />
+        <textarea
+          name="message"
+          id="message"
+          maxlength="500"
+          placeholder="Write your message here"
+          required
+        ></textarea>
+
+        <div id="button-wrapper">
+          <button type="submit" class="project-button form-button">
+            Get In Touch
+          </button>
+        </div>
+      </form>
+    </footer>
+  </body>
 </html>
