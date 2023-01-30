@@ -100,7 +100,7 @@ projects.forEach((project, index) => {
       </div>
     </div>
   `;
-  projectHTML.className = 'project-section';
+  projectHTML.className = 'project-section hidden';
   workSection.appendChild(projectHTML);
   const ul = document.querySelectorAll('.project-languages')[index];
   project.languages.forEach((language) => {

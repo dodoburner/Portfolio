@@ -32,6 +32,19 @@ body {
   color: #6070ff;
 }
 
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 3s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
 header {
   display: flex;
   align-items: center;
@@ -68,10 +81,25 @@ nav > ul {
   background-position: right -100px bottom;
   background-size: 350px;
   background-repeat: no-repeat;
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 #overlay {
-  background: linear-gradient(90deg, rgba(96, 112, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(96, 112, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
   border-bottom-left-radius: 150px;
 }
 
@@ -92,7 +120,11 @@ nav > ul {
 
 .intro,
 .description {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 239, 96, 1) 30%);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 239, 96, 1) 30%
+  );
   background-size: 100%;
   background-clip: text;
   -webkit-background-clip: text;

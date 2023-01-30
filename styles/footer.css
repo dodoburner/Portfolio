@@ -2,8 +2,11 @@ footer {
   background-color: white;
 }
 
-form {
+.form-container {
   background-color: #6070ff;
+}
+
+form {
   display: flex;
   align-items: center;
   justify-content: center;
