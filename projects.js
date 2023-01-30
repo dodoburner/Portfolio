@@ -30,7 +30,7 @@ const projects = [
     img: 'images/img1.png',
     name: 'Tip Calculator',
     description:
-      'A simple calculator to calculate the tip between you and your friends on a night out',
+      'A simple calculator to calculate the tip between you and your friends on a night out.',
     languages: ['html', 'css', 'javascript'],
     source: 'https://github.com/dodoburner/tip-calculator',
     live: 'https://dodoburner.github.io/tip-calculator/',
