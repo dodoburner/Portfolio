@@ -45,13 +45,13 @@ const projects = [
     live: 'https://dodoburner.github.io/DL-Global-Summit/',
   },
   {
-    img: 'images/mm.png',
-    name: 'Math Magicians',
+    img: 'images/ecommerce-site.png',
+    name: 'E-Commerce Site',
     description:
-      'This is a single page app built with React that has 3 sections; Home, Calculator, and Quotes. The home page welcomes the user, the calculator calculates, and the quotes page displays a math quote from an API.',
-    languages: ['react', 'html', 'css', 'javascript'],
-    source: 'https://github.com/dodoburner/math-magicians',
-    live: 'https://math-magicians-mm.netlify.app/',
+      'This is a simple e-commerce website built with React & Redux. The app data is fetched from a graphql api. The user can navigate through the different categories and products and add/remove items from the cart.',
+    languages: ['react', 'redux', 'html', 'css', 'javascript'],
+    source: 'https://github.com/dodoburner/ecommerce-site',
+    live: 'https://ecommerce-site99.netlify.app/',
   },
 ];
 
