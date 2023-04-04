@@ -9,6 +9,24 @@ const projects = [
     live: 'https://kanban-task-management-app.netlify.app/',
   },
   {
+    img: 'images/tesla-rental.png',
+    name: 'Tesla Rental App',
+    description:
+      'A full-stack app built in a team of 4. The user must register to use the app, he can reserve a car and see the details of a car. The admin can also add or remove cars.',
+    languages: ['React', 'Redux', 'Ruby', 'Ruby on Rails'],
+    source: 'https://github.com/dodoburner/tesla-rental-app',
+    live: 'https://tesla-car-rental-app.netlify.app/#/',
+  },
+  {
+    img: 'images/ecommerce-site.png',
+    name: 'E-Commerce Site',
+    description:
+      'This is a simple e-commerce website built with React & Redux. The app data is fetched from a graphql api. The user can navigate through the different categories and products and add/remove items from the cart.',
+    languages: ['react', 'redux', 'html', 'css', 'javascript'],
+    source: 'https://github.com/dodoburner/ecommerce-site',
+    live: 'https://ecommerce-site99.netlify.app/',
+  },
+  {
     img: 'images/air-pollution-img.png',
     name: 'Air Pollution Data',
     description:
@@ -34,24 +52,6 @@ const projects = [
     languages: ['html', 'css', 'javascript'],
     source: 'https://github.com/dodoburner/tip-calculator',
     live: 'https://dodoburner.github.io/tip-calculator/',
-  },
-  {
-    img: 'images/dl-img.png',
-    name: 'Dog Lovers Summit',
-    description:
-      ' A responsive website for a conference built with the mobile first approach. It has 2 pages; home and about.',
-    languages: ['html', 'css', 'javascript'],
-    source: 'https://github.com/dodoburner/DL-Global-Summit',
-    live: 'https://dodoburner.github.io/DL-Global-Summit/',
-  },
-  {
-    img: 'images/ecommerce-site.png',
-    name: 'E-Commerce Site',
-    description:
-      'This is a simple e-commerce website built with React & Redux. The app data is fetched from a graphql api. The user can navigate through the different categories and products and add/remove items from the cart.',
-    languages: ['react', 'redux', 'html', 'css', 'javascript'],
-    source: 'https://github.com/dodoburner/ecommerce-site',
-    live: 'https://ecommerce-site99.netlify.app/',
   },
 ];
 
